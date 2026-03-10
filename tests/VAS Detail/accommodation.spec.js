@@ -16,24 +16,7 @@ test("Accommodation vas form", async ({ page }) => {
 
   await expect(page).toHaveURL(/accommodation/);
 
-//   await page.getByRole('textbox',{name:"firstName"}).fill("kanhaiya");
 
-//   await page.getByRole('textbox',{name:"lastName"}).fill("lal");
-
-//   await page.getByRole('textbox',{name:"email"}).fill("klsharma@yopmail.com");
-
-await page.getByPlaceholder('First name*').fill('kanhaiya');
-await page.getByPlaceholder('Last name*').fill('lal');
-await page.getByPlaceholder('Email *').fill('klsharma@yopmail.com');
-await page.getByPlaceholder('Phone number *').fill('9876543210');
-
-await page.locator('select[name="nationality"]').selectOption('indian');
-
-const university = page.getByRole('combobox', { name: 'University' });
-await university.fill('ACM Guildford');
-await university.press('Enter');
-
-await page.getByRole('button', { name: 'Explore properties' }).click();
-
+  await page.getByLabel('First name').fill('Rahul');
 
 });
