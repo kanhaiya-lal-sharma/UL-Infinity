@@ -3,6 +3,9 @@
 const { test, expect } = require("@playwright/test");
 
 test("Accommodation vas form", async ({ page }) => {
+
+
+  test.setTimeout(60000);
   await page.goto("https://dev-vas.universityliving.com/");
 
   await page.getByRole("button", { name: "Housing" }).click();

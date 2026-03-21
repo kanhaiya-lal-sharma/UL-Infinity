@@ -29,8 +29,15 @@ await guarantorModal.locator('input[name="lastName"]').fill("lal");
 
 await guarantorModal.locator('input[name="email"]').fill("kanhaiya@yopmail.com");
 
-const phoneInput = page.getByPlaceholder("Contact Number").nth(1);
-  await phoneInput.fill("8851658991");
+const phoneInput = guarantorModal.locator('.react-tel-input input');
 
+await phoneInput.click();
+await page.keyboard.press('Control+A'); // select all (+91)
+await page.keyboard.press('Backspace'); // delete
+await phoneInput.type('8851658991');
+
+const submitBtn = guarantorModal.getByRole("button",{name:'Submit'});
+
+await submitBtn.click();
 
 })
