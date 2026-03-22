@@ -6,7 +6,7 @@ const { InfinityFormPage } = require("../../pages/infinityForm.page");
 
 test("infinity lite", async ({ page }) => {
 
-  await page.goto("https://dev-vas.universityliving.com/");
+  await page.goto("/");
 
   await page.getByRole("button",{name:"Choose services"}).click();
 

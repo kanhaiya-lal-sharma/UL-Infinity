@@ -1,20 +1,25 @@
 
+
 // const{test,expect}=require("@playwright/test");
 
 // test("Guarantor form",async({page})=>{
 
 //      await page.goto("/");
 
-//   await page.getByRole("button", { name: "Housing" }).click();
+  
+//     await page.getByRole("button", { name: /Travel/ })
+//   .filter({ hasText: /^Travel$/ })
+//   .click();
 
 //   await page
 //     .getByRole("navigation")
-//     .getByRole("link", { name: "Guarantor", exact: true })
+//     .getByRole("link", { name: "Airport Pickup", exact: true })
 //     .click();
 
-//   await expect(page).toHaveURL(/guarantor/);
 
-//   const findGuarantorBtn =  page.getByRole("button",{name:'Find A Guarantor'}).first();
+//   await expect(page).toHaveURL(/airport-pickup/);
+
+//   const findGuarantorBtn =  page.getByRole("button",{name:'Find a Pickup'}).first();
 
 //   await findGuarantorBtn.click();
 
@@ -43,20 +48,22 @@
 
 // })
 
-
 const { test, expect } = require("@playwright/test");
 const { CommonModal } = require("../../pages/commonModal");
 
-test("Guarantor Vas form", async ({ page }) => {
+test("Airport Pickup Vas form", async ({ page }) => {
 
   await page.goto("/");
 
-  await page.getByRole("button", { name: "Housing" }).click();
-  await page.getByRole("link", { name: "Guarantor", exact: true }).click();
+  await page.getByRole("navigation")
+    .getByRole("button", { name: "Travel", exact: true })
+    .click();
 
-  await expect(page).toHaveURL(/guarantor/);
+  await page.getByRole("link", { name: "Airport Pickup", exact: true }).click();
 
-  await page.getByRole("button", { name: "Find A Guarantor" }).first().click();
+  await expect(page).toHaveURL(/airport-pickup/);
+
+  await page.getByRole("button", { name: "Find a Pickup" }).first().click();
 
   const modal = new CommonModal(page);
 

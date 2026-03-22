@@ -10,7 +10,7 @@ test("infinity Elite", async ({ page }) => {
 
      test.setTimeout(60000);
 
-  await page.goto("https://dev-vas.universityliving.com/");
+  await page.goto("/");
 
   await page.getByRole("button",{name:"Infinity Elite"}).click();
 

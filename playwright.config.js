@@ -27,7 +27,7 @@ export default defineConfig({
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('')`. */
-    // baseURL: 'http://localhost:3000',
+     baseURL: 'https://dev-vas.universityliving.com/',
       headless: false, // browser visible hoga
     launchOptions: {
       slowMo: 1000   // har action ke baad 1 second delay
