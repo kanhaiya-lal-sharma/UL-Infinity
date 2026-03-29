@@ -47,17 +47,22 @@ await dropdown
 
 await page.getByRole("button", { name: "SEARCH FLIGHT TICKETS" }).click();
 
-  const modal = new CommonModal(page);
+ 
+   const modal = page.getByText("Book Flight Tickets").locator("..");
 
-  await modal.waitForModal();
-  await modal.fillForm({
-    firstName: "kanhaiya",
-    lastName: "lal",
-    email: "kanhaiya@yopmail.com",
-    phone: "8851658991"
-  });
+  await page.locator("//input[@name='firstName']").nth(1).fill("Kanhaiya");
 
-  await modal.submit();
+   await page.locator("//input[@name='lastName']").nth(1).fill("sharma");
+
+   await page.locator("//input[@name='email']").nth(1).fill("kanhaiya@yopmail.com");
+
+   const phoneNO = page.locator(".react-tel-input input").nth(1);
+
+   await phoneNO.fill("9997141783");
+
+
+   const submitBtn = page.getByRole("button",{name:"Search flights"});
+   await submitBtn.click();
 
 });
 

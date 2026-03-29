@@ -28,8 +28,14 @@ test("Accommodation vas form", async ({ page }) => {
 
 //phone Number
 
- const phoneInput = page.getByPlaceholder("Phone number *").nth(1);
-  await phoneInput.fill("8851658991");
+
+const phoneInput = page.getByPlaceholder("Phone number *").nth(1);
+
+await phoneInput.click();
+await page.keyboard.press("Control+A");
+await page.keyboard.press("Backspace");
+await phoneInput.type("8851658991");
+
 
   // Nationality
 

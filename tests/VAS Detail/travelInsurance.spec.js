@@ -3,7 +3,7 @@
 
 const { test, expect } = require("@playwright/test");
 
-test("Airport Pickup Vas form", async ({ page }) => {
+test("Travel Insurance Vas form", async ({ page }) => {
 
   await page.goto("/");
 
