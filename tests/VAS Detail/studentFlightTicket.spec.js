@@ -56,9 +56,13 @@ await page.getByRole("button", { name: "SEARCH FLIGHT TICKETS" }).click();
 
    await page.locator("//input[@name='email']").nth(1).fill("kanhaiya@yopmail.com");
 
-   const phoneNO = page.locator(".react-tel-input input").nth(1);
+   const phoneInput = page.locator(".react-tel-input input").nth(1);
 
-   await phoneNO.fill("9997141783");
+   await phoneInput.click();
+   await page.keyboard.press("Control+A");
+  await page.keyboard.press("Backspace");
+   await phoneInput.type("8851658991");
+
 
 
    const submitBtn = page.getByRole("button",{name:"Search flights"});
