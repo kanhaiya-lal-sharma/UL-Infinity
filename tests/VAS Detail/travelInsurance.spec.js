@@ -19,14 +19,5 @@ test("Travel Insurance Vas form", async ({ page }) => {
 
   await submitBtn.click();
 
-  // // 🔥 Handle new tab
-  // const [newPage] = await Promise.all([
-  //   page.context().waitForEvent("page"),
-  //   submitBtn.click()
-  // ]);
-
-  // await newPage.waitForLoadState();
-
-  // // ✅ Correct URL check
-  // await expect(newPage).toHaveURL(/travel-insurance\?journey=start/);
+ 
 });
