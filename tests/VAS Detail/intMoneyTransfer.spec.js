@@ -99,11 +99,8 @@ await expect(successModal).toBeVisible();
 
 console.log(`International money transfer  form email - ${email}`);
 
-jhghgh
-
-jhbjhb
 
 })
-
+ 
 
 

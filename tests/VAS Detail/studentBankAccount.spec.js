@@ -1,6 +1,7 @@
 
 
 const { test, expect } = require("@playwright/test");
+const { generateUniqueData } = require("../../utils/testData");
 
 test("Student Bank Account vas form", async ({ page }) => {
 
@@ -17,6 +18,10 @@ test("Student Bank Account vas form", async ({ page }) => {
 
   await expect(page).toHaveURL(/bank-account/);
 
+    const {phoneNo, eno } = generateUniqueData();
+
+  const email = `studentBankAccount_${eno}.university@yopmail.com` ;
+
   const openAccountBtn = page.getByRole("button",{name:'Open Account'}).first();
 
   await openAccountBtn.click();
@@ -30,14 +35,14 @@ await bankAccountModal.locator('input[name="firstName"]').fill("kanhaiya");
 
 await bankAccountModal.locator('input[name="lastName"]').fill("lal");
 
-await bankAccountModal.locator('input[name="email"]').fill("kanhaiya@yopmail.com");
+await bankAccountModal.locator('input[name="email"]').fill(email);
 
 const phoneInput = bankAccountModal.locator('.react-tel-input input');
 
 await phoneInput.click();
 await page.keyboard.press('Control+A'); // select all (+91)
 await page.keyboard.press('Backspace'); // delete
-await phoneInput.type('8851658991');
+await phoneInput.type(phoneNo);
 
 //University  University
 
@@ -58,5 +63,7 @@ await page.getByRole('option', { name: /UCFB London/i }).click();
 const submitBtn = bankAccountModal.getByRole("button",{name:'Submit'});
 
 await submitBtn.click();
+
+console.log(`Student Bank Account form email - ${email}`);
 
 })

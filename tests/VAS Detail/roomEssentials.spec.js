@@ -1,6 +1,7 @@
 
 
  const { test, expect } = require("@playwright/test");
+  const { generateUniqueData } = require("../../utils/testData");
 
 test("Room Essentials Vas form", async ({ page }) => {
 
@@ -14,13 +15,18 @@ test("Room Essentials Vas form", async ({ page }) => {
 
   await expect(page).toHaveURL(/roomessentials/);
 
-   // Form load hone ka time do (bahut zaroori)
-  await page.waitForTimeout(5000); // 5 seconds wait – dynamic phone field ke liye
+  
+  const {phoneNo, eno } = generateUniqueData();
+
+  const email = `roomEssentials_${eno}.university@yopmail.com` ;
+
+
+  await page.waitForTimeout(5000); 
 
   // First Name, Last Name, Email (yeh already chal rahe hain, short rakha)
   await page.locator('input[name="firstName"]:visible').first().fill("kanhaiya");
   await page.locator('input[name="lastName"]:visible').first().fill("sharma");
-  await page.locator('input[name="email"]:visible').first().fill("kanhaiya@yopmail.com");
+  await page.locator('input[name="email"]:visible').first().fill(email);
 
   //phone Number
 
@@ -30,7 +36,7 @@ const phoneInput = page.locator('.react-tel-input input').nth(1);
 await phoneInput.click();
 await page.keyboard.press("Control+A");
 await page.keyboard.press("Backspace");
-await page.keyboard.type("8851658991");
+await page.keyboard.type(phoneNo);
 
   //Destination country
 
@@ -47,5 +53,7 @@ await submitBtn.click();
 
 
 await page.getByRole("button", { name: "View Kit" }).nth(10).click();
+
+console.log(`Room Essentials  form email - ${email}`);
 
 });

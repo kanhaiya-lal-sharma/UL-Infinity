@@ -2,6 +2,7 @@
 
 const { test, expect } = require("@playwright/test");
 const { CommonModal } = require("../../pages/commonModal");
+const { generateUniqueData } = require("../../utils/testData");
 
 test("Student Flight Ticket Vas form", async ({ page }) => {
 
@@ -17,6 +18,10 @@ test("Student Flight Ticket Vas form", async ({ page }) => {
   await page.getByRole("link", { name: "Student Flight Tickets", exact: true }).click();
 
   await expect(page).toHaveURL(/students-flight-ticket/);
+
+  const {phoneNo, eno } = generateUniqueData();
+
+  const email = `studentFlightTicket_${eno}.university@yopmail.com` ;
 
 
 
@@ -54,19 +59,21 @@ await page.getByRole("button", { name: "SEARCH FLIGHT TICKETS" }).click();
 
    await page.locator("//input[@name='lastName']").nth(1).fill("sharma");
 
-   await page.locator("//input[@name='email']").nth(1).fill("kanhaiya@yopmail.com");
+   await page.locator("//input[@name='email']").nth(1).fill(email);
 
    const phoneInput = page.locator(".react-tel-input input").nth(1);
 
    await phoneInput.click();
    await page.keyboard.press("Control+A");
   await page.keyboard.press("Backspace");
-   await phoneInput.type("8851658991");
+   await phoneInput.type(phoneNo);
 
 
 
    const submitBtn = page.getByRole("button",{name:"Search flights"});
    await submitBtn.click();
+
+console.log(`Student flight ticket  form email - ${email}`);
 
 });
 
