@@ -13,7 +13,7 @@ test("Book free call",async({page})=>{
 const {phoneNo, eno } = generateUniqueData();
 
 
-  const email = `Bfc_${eno}.university@yopmail.com` ;
+  const email = `BookFreeCall_${eno}.university@yopmail.com` ;
 
   
   await page.locator('input[name="firstName"]:visible').first().fill("kanhaiya");
@@ -71,7 +71,6 @@ await page.getByLabel('Minute').selectOption('30');
 
 const submitBtn = await page.getByRole("button",{name:"Schedule Callback"}).click();
 
-console.log(email);
-console.log(eno);
+console.log(`Book fee call  form email - ${email}`);
 
 })

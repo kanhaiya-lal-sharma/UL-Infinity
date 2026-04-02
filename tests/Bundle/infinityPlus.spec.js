@@ -3,6 +3,7 @@
 
 const { test, expect } = require("@playwright/test");
 const { InfinityFormPage } = require("../../pages/infinityForm.page");
+const { generateUniqueData } = require("../../utils/testData");
 
 
 test("infinity Plus", async ({ page }) => {
@@ -10,6 +11,11 @@ test("infinity Plus", async ({ page }) => {
      test.setTimeout(60000);
 
   await page.goto("/");
+
+  
+     const {phoneNo, eno } = generateUniqueData();
+
+   const email = `infinityPlus_${eno}.university@yopmail.com` ;
 
   await page.getByRole("button",{name:"Infinity Plus"}).click();
 
@@ -31,13 +37,16 @@ test("infinity Plus", async ({ page }) => {
 
   await form.fillForm(
     "kahaiya lal",
-    "klsharma@yopmail.com",
-    "1234567890",
+    email,
+    phoneNo,
     "ACM Guildford"
   );
 
   await form.submitForm();
   await form.acknowledge();
+
+   
+console.log(`Infinity Plus form email - ${email}`);
 
 });
 
