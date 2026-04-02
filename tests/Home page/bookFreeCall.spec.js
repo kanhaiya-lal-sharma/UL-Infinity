@@ -1,5 +1,6 @@
 
 const { test, expect } = require("@playwright/test");
+const { generateUniqueData } = require("../../utils/testData");
 
 test("Book free call",async({page})=>{
 
@@ -7,10 +8,17 @@ test("Book free call",async({page})=>{
 
     await page.getByRole("button",{name:'Book a free call'}).click();
 
-      // First Name, Last Name, Email (yeh already chal rahe hain, short rakha)
+
+     
+const {phoneNo, eno } = generateUniqueData();
+
+
+  const email = `Bfc_${eno}.university@yopmail.com` ;
+
+  
   await page.locator('input[name="firstName"]:visible').first().fill("kanhaiya");
   await page.locator('input[name="lastName"]:visible').first().fill("sharma");
-  await page.locator('input[name="email"]:visible').first().fill("kanhaiya@yopmail.com");
+  await page.locator('input[name="email"]:visible').first().fill(email);
 
 
 //phone Number
@@ -21,7 +29,7 @@ const phoneInput = page.locator('.react-tel-input input');
 await phoneInput.click();
 await page.keyboard.press("Control+A");
 await page.keyboard.press("Backspace");
-await phoneInput.type("8851658991");
+await phoneInput.type(phoneNo);
 
 
 
@@ -55,12 +63,15 @@ await expect(page.locator('.react-datepicker')).toBeVisible();
 await page.waitForSelector('.react-datepicker__day', { timeout: 10000 });
 
 // select 31st of current month
-await page.locator('.react-datepicker__day--031:not(.react-datepicker__day--outside-month)').click();
+await page.locator('.react-datepicker__day--030:not(.react-datepicker__day--outside-month)').click();
 
 await page.getByLabel('Hour').selectOption('10');
 await page.getByLabel('Minute').selectOption('30');
 
 
 const submitBtn = await page.getByRole("button",{name:"Schedule Callback"}).click();
+
+console.log(email);
+console.log(eno);
 
 })

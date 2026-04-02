@@ -1,6 +1,7 @@
 
 
 const { test, expect } = require("@playwright/test");
+const { generateUniqueData } = require("../../utils/testData");
 
 test("forex vas form", async ({ page }) => {
 
@@ -17,13 +18,18 @@ test("forex vas form", async ({ page }) => {
 
   await expect(page).toHaveURL(/forex/);
 
-  // Form load hone ka time do (bahut zaroori)
-  await page.waitForTimeout(5000); // 5 seconds wait – dynamic phone field ke liye
+  
+  await page.waitForTimeout(5000); 
 
-  // First Name, Last Name, Email (yeh already chal rahe hain, short rakha)
+
+const {phoneNo, eno } = generateUniqueData();
+
+
+  const email = `forex_${eno}.university@yopmail.com` ;
+
   await page.locator('input[name="firstName"]:visible').first().fill("kanhaiya");
   await page.locator('input[name="lastName"]:visible').first().fill("sharma");
-  await page.locator('input[name="email"]:visible').first().fill("kanhaiya@yopmail.com");
+  await page.locator('input[name="email"]:visible').first().fill(email);
 
   
 
@@ -32,7 +38,7 @@ const phoneInput = page.locator('.react-tel-input input').nth(1);
 await phoneInput.click();
 await page.keyboard.press("Control+A");
 await page.keyboard.press("Backspace");
-await phoneInput.type("8851658991");
+await phoneInput.type(phoneNo);
 
   
 const gender = page.locator('select[name="gender"]:visible').first();
@@ -67,6 +73,8 @@ const successModal = page.getByText("Your enquiry has been submitted").locator("
 
 // 1. Modal visible hai ya nahi
 await expect(successModal).toBeVisible();
+
+console.log(`Forex form email - ${email}`);
 
 })
 

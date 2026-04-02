@@ -3,6 +3,7 @@
 
 const { test, expect } = require("@playwright/test");
 const { CommonModal } = require("../../pages/commonModal");
+const { generateUniqueData } = require("../../utils/testData");
 
 test("Guarantor Vas form", async ({ page }) => {
 
@@ -13,6 +14,12 @@ test("Guarantor Vas form", async ({ page }) => {
 
   await expect(page).toHaveURL(/guarantor/);
 
+
+      
+const {phoneNo, eno } = generateUniqueData();
+
+  const email = `guarantor_${eno}.university@yopmail.com` ;
+
   await page.getByRole("button", { name: "Find A Guarantor" }).first().click();
 
   const modal = new CommonModal(page);
@@ -21,11 +28,13 @@ test("Guarantor Vas form", async ({ page }) => {
   await modal.fillForm({
     firstName: "kanhaiya",
     lastName: "lal",
-    email: "kanhaiya@yopmail.com",
-    phone: "8851658991"
+    email: email,
+    phone: phoneNo
   });
 
   await modal.submit();
+
+   console.log(`Guarantor form email - ${email}`);
 
   
 });

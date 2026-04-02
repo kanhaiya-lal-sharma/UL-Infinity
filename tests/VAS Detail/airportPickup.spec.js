@@ -2,6 +2,7 @@
 
 const { test, expect } = require("@playwright/test");
 const { CommonModal } = require("../../pages/commonModal");
+const { generateUniqueData } = require("../../utils/testData");
 
 test("Airport Pickup Vas form", async ({ page }) => {
 
@@ -10,6 +11,12 @@ test("Airport Pickup Vas form", async ({ page }) => {
   await page.getByRole("navigation")
     .getByRole("button", { name: "Travel", exact: true })
     .click();
+
+
+    
+const {phoneNo, eno } = generateUniqueData();
+
+  const email = `airportPick_${eno}.university@yopmail.com` ;
 
   await page.getByRole("link", { name: "Airport Pickup", exact: true }).click();
 
@@ -23,9 +30,11 @@ test("Airport Pickup Vas form", async ({ page }) => {
   await modal.fillForm({
     firstName: "kanhaiya",
     lastName: "lal",
-    email: "kanhaiya@yopmail.com",
-    phone: "8851658991"
+    email: email,
+    phone: phoneNo
   });
 
   await modal.submit();
+
+  console.log(`Airport pickup form email - ${email}`);
 });

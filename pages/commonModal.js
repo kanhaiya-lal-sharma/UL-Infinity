@@ -29,7 +29,7 @@ class CommonModal {
     await this.phone.click();
     await this.page.keyboard.press('Control+A');
     await this.page.keyboard.press('Backspace');
-    await this.phone.type('8851658991');
+    await this.phone.type(phone);
 
   }
 
