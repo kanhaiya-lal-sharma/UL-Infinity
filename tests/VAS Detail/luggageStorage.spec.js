@@ -15,12 +15,15 @@ test("Luggage Storage Vas form", async ({ page }) => {
 
   const email = `luggageStorage_${eno}.university@yopmail.com` ;
 
+
+   await page.waitForTimeout(5000); 
+
   await page.getByRole("button", { name: "Book Now" }).first().click();
 
    const modal = page.getByText("Get Luggage Storage Service").last().locator("..");
 
    
-  await page.waitForTimeout(5000); 
+ 
 
   await page.locator("//input[@name='firstName']").nth(1).fill("Kanhaiya");
 
