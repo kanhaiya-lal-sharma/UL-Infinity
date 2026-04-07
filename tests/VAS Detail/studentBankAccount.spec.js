@@ -18,7 +18,7 @@ test("Student Bank Account vas form", async ({ page }) => {
 
   await expect(page).toHaveURL(/bank-account/);
 
-    const {phoneNo, eno } = generateUniqueData();
+    const {phoneNo, eno, Fname , Lname} = generateUniqueData();
 
   const email = `studentBankAccount_${eno}.university@yopmail.com` ;
 
@@ -31,17 +31,17 @@ test("Student Bank Account vas form", async ({ page }) => {
 
 await bankAccountModal.waitFor({ state: "visible" });
 
-await bankAccountModal.locator('input[name="firstName"]').fill("kanhaiya");
+await bankAccountModal.locator('input[name="firstName"]').fill(Fname);
 
-await bankAccountModal.locator('input[name="lastName"]').fill("lal");
+await bankAccountModal.locator('input[name="lastName"]').fill(Lname);
 
 await bankAccountModal.locator('input[name="email"]').fill(email);
 
 const phoneInput = bankAccountModal.locator('.react-tel-input input');
 
 await phoneInput.click();
-await page.keyboard.press('Control+A'); // select all (+91)
-await page.keyboard.press('Backspace'); // delete
+await page.keyboard.press('Control+A'); 
+await page.keyboard.press('Backspace'); 
 await phoneInput.type(phoneNo);
 
 //University  University

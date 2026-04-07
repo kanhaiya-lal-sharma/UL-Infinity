@@ -22,13 +22,13 @@ test("forex vas form", async ({ page }) => {
   await page.waitForTimeout(5000); 
 
 
-const {phoneNo, eno } = generateUniqueData();
+const {phoneNo, eno ,Fname ,Lname } = generateUniqueData();
 
 
   const email = `forex_${eno}.university@yopmail.com` ;
 
-  await page.locator('input[name="firstName"]:visible').first().fill("kanhaiya");
-  await page.locator('input[name="lastName"]:visible').first().fill("sharma");
+  await page.locator('input[name="firstName"]:visible').first().fill(Fname);
+  await page.locator('input[name="lastName"]:visible').first().fill(Lname);
   await page.locator('input[name="email"]:visible').first().fill(email);
 
   
@@ -53,13 +53,13 @@ await country.selectOption('Australia');
 const universityInput = page
   .getByRole('main')
   .getByRole('combobox', { name: 'University*' })
-  .first();   // or .nth(0)
+  .first();   
 
-// Optional: make sure it's the visible one in the main form
+
 await expect(universityInput).toBeVisible();
 
-await universityInput.click();           // sometimes helps open dropdown
-await universityInput.fill("UCFB London");  // most React auto-completes react best to .fill()
+await universityInput.click();          
+await universityInput.fill("UCFB London");  
 await page.keyboard.press("Enter");
 
 
@@ -68,10 +68,9 @@ const submitBtn = page.getByRole("button",{name:'Submit'}).first();
 await submitBtn.click();
 
 
-// ✅ Modal ka locator (text ke basis pe)
 const successModal = page.getByText("Your enquiry has been submitted").locator("..");
 
-// 1. Modal visible hai ya nahi
+
 await expect(successModal).toBeVisible();
 
 console.log(`Forex form email - ${email}`);

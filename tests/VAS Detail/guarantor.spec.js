@@ -16,7 +16,7 @@ test("Guarantor Vas form", async ({ page }) => {
 
 
       
-const {phoneNo, eno } = generateUniqueData();
+const {phoneNo, eno ,Fname ,Lname } = generateUniqueData();
 
   const email = `guarantor_${eno}.university@yopmail.com` ;
 
@@ -26,8 +26,8 @@ const {phoneNo, eno } = generateUniqueData();
 
   await modal.waitForModal();
   await modal.fillForm({
-    firstName: "kanhaiya",
-    lastName: "lal",
+    firstName: Fname,
+    lastName: Lname,
     email: email,
     phone: phoneNo
   });

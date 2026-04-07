@@ -21,3 +21,4 @@ test("Travel Insurance Vas form", async ({ page }) => {
 
  
 });
+

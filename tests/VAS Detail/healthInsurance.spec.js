@@ -16,7 +16,7 @@ test("Health insurance Vas form", async ({ page }) => {
   await expect(page).toHaveURL(/health-insurance/);
 
   
-const {phoneNo, eno } = generateUniqueData();
+const {phoneNo, eno ,Fname ,Lname } = generateUniqueData();
 
   const email = `healthInsurance_${eno}.university@yopmail.com` ;
 
@@ -30,13 +30,13 @@ await country.selectOption("United States");
 
 
 
-  // First Name, Last Name, Email (yeh already chal rahe hain, short rakha)
-  await page.locator('input[name="firstName"]:visible').first().fill("kanhaiya");
-  await page.locator('input[name="lastName"]:visible').first().fill("sharma");
+  
+  await page.locator('input[name="firstName"]:visible').first().fill(Fname);
+  await page.locator('input[name="lastName"]:visible').first().fill(Lname);
   await page.locator('input[name="email"]:visible').first().fill(email);
 
 
-//phone Number
+
 
 
 const phoneInput = page.getByPlaceholder("Phone number *").nth(1);

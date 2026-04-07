@@ -21,17 +21,16 @@ test("Accommodation vas form", async ({ page }) => {
   
   await page.waitForTimeout(5000); 
 
-  const {phoneNo, eno } = generateUniqueData();
+  const {phoneNo, eno, Fname , Lname } = generateUniqueData();
 
   const email = `accommodation_${eno}.university@yopmail.com` ;
 
-  // First Name, Last Name, Email (yeh already chal rahe hain, short rakha)
-  await page.locator('input[name="firstName"]:visible').first().fill("kanhaiya");
-  await page.locator('input[name="lastName"]:visible').first().fill("sharma");
+  
+  await page.locator('input[name="firstName"]:visible').first().fill(Fname);
+  await page.locator('input[name="lastName"]:visible').first().fill(Lname);
   await page.locator('input[name="email"]:visible').first().fill(email);
 
 
-//phone Number
 
 
 const phoneInput = page.getByPlaceholder("Phone number *").nth(1);
@@ -42,37 +41,32 @@ await page.keyboard.press("Backspace");
 await phoneInput.type(phoneNo);
 
 
-  // Nationality
-
-
+  
 const nationality = page.locator('select[name="nationality"]:visible').first();
 
 await nationality.waitFor({ state: "visible" });
 await nationality.selectOption("indian");
 
-//University  University
+
 
 
 const universityInput = page
   .getByRole('main')
   .getByRole('combobox', { name: 'University*' })
-  .first();   // or .nth(0)
+  .first();   
 
-// Optional: make sure it's the visible one in the main form
 await expect(universityInput).toBeVisible();
 
-await universityInput.click();           // sometimes helps open dropdown
-await universityInput.fill("UCFB London");  // most React auto-completes react best to .fill()
+await universityInput.click();           
+await universityInput.fill("UCFB London");  
 
-// Wait for suggestion popup
 await page.waitForSelector('[role="listbox"] [role="option"]', { timeout: 10000 });
 
-// Prefer getByRole over plain text locator for accessibility
 await page
   .getByRole('option', { name: 'UCFB London' })
   .click();
 
-// Optional safety check
+
 await expect(universityInput).toHaveValue(/UCFB London/i);
 
 
@@ -85,19 +79,18 @@ const thankModal = page.getByText("We have received your request. Our experts wi
 const processBtn = thankModal.getByRole("button",{name:"Proceed"});
 
 
-  // 🔥 NEW TAB HANDLE (IMPORTANT PART)
+
   const [newPage] = await Promise.all([
-    page.context().waitForEvent('page'), // wait for new tab
-    processBtn.click()                   // click triggers new tab
+    page.context().waitForEvent('page'), 
+    processBtn.click()                   
   ]);
 
-  // Wait for new tab to load
   await newPage.waitForLoadState();
 
-  // ✅ URL verification on NEW TAB
+
   await expect(newPage).toHaveURL(/ucfb-london/);
 
-  // Optional: extra validation
+  
   await expect(newPage).toHaveTitle(/UCFB London/i);
 
   console.log(`Accommodatin form Email - ${email}`);

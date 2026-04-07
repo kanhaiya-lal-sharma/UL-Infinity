@@ -11,7 +11,7 @@ test("Luggage Storage Vas form", async ({ page }) => {
 
   await expect(page).toHaveURL(/luggage-storage/);
 
-  const {phoneNo, eno } = generateUniqueData();
+  const {phoneNo, eno ,Fname ,Lname} = generateUniqueData();
 
   const email = `luggageStorage_${eno}.university@yopmail.com` ;
 
@@ -25,21 +25,19 @@ test("Luggage Storage Vas form", async ({ page }) => {
    
  
 
-  await page.locator("//input[@name='firstName']").nth(1).fill("Kanhaiya");
+  await page.locator("//input[@name='firstName']").nth(1).fill(Fname);
 
-   await page.locator("//input[@name='lastName']").nth(1).fill("sharma");
+   await page.locator("//input[@name='lastName']").nth(1).fill(Lname);
 
    await page.locator("//input[@name='email']").nth(1).fill(email);
 
-  //  const phoneNO = page.locator(".react-tel-input input").nth(1);
 
-  //  await phoneNO.fill("9997141783");
 
 const phoneInput = page.locator('.react-tel-input input').nth(1);
 
 await phoneInput.click();
-await page.keyboard.press('Control+A'); // select all (+91)
-await page.keyboard.press('Backspace'); // delete
+await page.keyboard.press('Control+A'); 
+await page.keyboard.press('Backspace'); 
 await phoneInput.type(phoneNo);
 
 

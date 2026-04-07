@@ -16,16 +16,16 @@ test("Room Essentials Vas form", async ({ page }) => {
   await expect(page).toHaveURL(/roomessentials/);
 
   
-  const {phoneNo, eno } = generateUniqueData();
+  const {phoneNo, eno ,Fname ,Lname} = generateUniqueData();
 
   const email = `roomEssentials_${eno}.university@yopmail.com` ;
 
 
   await page.waitForTimeout(5000); 
 
-  // First Name, Last Name, Email (yeh already chal rahe hain, short rakha)
-  await page.locator('input[name="firstName"]:visible').first().fill("kanhaiya");
-  await page.locator('input[name="lastName"]:visible').first().fill("sharma");
+  
+  await page.locator('input[name="firstName"]:visible').first().fill(Fname);
+  await page.locator('input[name="lastName"]:visible').first().fill(Lname);
   await page.locator('input[name="email"]:visible').first().fill(email);
 
   //phone Number

@@ -21,7 +21,10 @@ function generateUniqueData() {
   phoneNo = date.getSeconds() > 9 ? phoneNo + date.getSeconds() :
        phoneNo + "0" + date.getSeconds();
 
-  return { phoneNo, eno };
+  const Fname ="kanhaiya";
+  const Lname ="sharma";
+
+  return { phoneNo, eno , Fname, Lname };
 }
 
 module.exports = { generateUniqueData };

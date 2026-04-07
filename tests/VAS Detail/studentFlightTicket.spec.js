@@ -19,35 +19,34 @@ test("Student Flight Ticket Vas form", async ({ page }) => {
 
   await expect(page).toHaveURL(/students-flight-ticket/);
 
-  const {phoneNo, eno } = generateUniqueData();
+  const {phoneNo, eno,Fname,Lname } = generateUniqueData();
 
   const email = `studentFlightTicket_${eno}.university@yopmail.com` ;
 
 
 
-// "Flying To" button ko locator banao
+
 const flyingToButton = page.getByRole("button", { name: "Flying To" });
 
-// Dropdown kholo
+
 await flyingToButton.click();
 
-// Ab dropdown ko button ke relative locator se lo (best practice)
 const dropdown = flyingToButton.locator('.airport-dropdown');
 
-// Wait for THIS specific dropdown
+
 await dropdown.waitFor({ state: 'visible', timeout: 10000 });
 
-// Ab search input bhi isi dropdown ke andar
+
 const searchInput = dropdown.getByPlaceholder("Search by city, airport, or code");
 
 await expect(searchInput).toBeVisible({ timeout: 5000 });
 await searchInput.fill("New York");
-//await page.keyboard.press("Enter");
+
 
 await dropdown
-    .getByRole("button")                  // suggestions button hote hain
-    .filter({ hasText: /New York/i })     // text mein New York ho
-    .first()                              // pehla match (usually main city)
+    .getByRole("button")                  
+    .filter({ hasText: /New York/i })     
+    .first()                              
     .click();
 
 await page.getByRole("button", { name: "SEARCH FLIGHT TICKETS" }).click();
@@ -55,9 +54,9 @@ await page.getByRole("button", { name: "SEARCH FLIGHT TICKETS" }).click();
  
    const modal = page.getByText("Book Flight Tickets").locator("..");
 
-  await page.locator("//input[@name='firstName']").nth(1).fill("Kanhaiya");
+  await page.locator("//input[@name='firstName']").nth(1).fill(Fname);
 
-   await page.locator("//input[@name='lastName']").nth(1).fill("sharma");
+   await page.locator("//input[@name='lastName']").nth(1).fill(Lname);
 
    await page.locator("//input[@name='email']").nth(1).fill(email);
 
