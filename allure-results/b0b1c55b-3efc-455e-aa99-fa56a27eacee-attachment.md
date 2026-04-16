@@ -1,0 +1,596 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - banner [ref=e3]:
+    - generic [ref=e5]:
+      - link "Infinity logo Everything you need to move abroad." [ref=e7] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e8]:
+          - img "Infinity logo" [ref=e9]
+          - generic [ref=e10]:
+            - img [ref=e11]
+            - generic [ref=e20]: Everything you need to move abroad.
+      - navigation [ref=e21]:
+        - button "Housing" [ref=e23] [cursor=pointer]:
+          - text: Housing
+          - img [ref=e24]
+        - button "Finance" [ref=e27] [cursor=pointer]:
+          - text: Finance
+          - img [ref=e28]
+        - generic [ref=e30]:
+          - button "Travel" [active] [ref=e31] [cursor=pointer]:
+            - text: Travel
+            - img [ref=e32]
+          - generic [ref=e35]:
+            - link "Student Flight Tickets" [ref=e36] [cursor=pointer]:
+              - /url: /students-flight-ticket
+            - link "Airport Pickup" [ref=e37] [cursor=pointer]:
+              - /url: /airport-pickup
+            - link "Travel Insurance" [ref=e38] [cursor=pointer]:
+              - /url: /travel-insurance
+        - button "Essentials" [ref=e40] [cursor=pointer]:
+          - text: Essentials
+          - img [ref=e41]
+        - button "Health" [ref=e44] [cursor=pointer]:
+          - text: Health
+          - img [ref=e45]
+        - button "Career" [ref=e48] [cursor=pointer]:
+          - text: Career
+          - img [ref=e49]
+  - main [ref=e51]:
+    - generic [ref=e54]:
+      - generic [ref=e55]:
+        - button "Banner slide 6" [ref=e56] [cursor=pointer]
+        - button "Banner slide 1" [ref=e58] [cursor=pointer]:
+          - generic [ref=e61]:
+            - 'heading "From Booking to Belonging: Welcome to UL Infinity" [level=1] [ref=e62]'
+            - paragraph [ref=e63]: We bring all move-in essentials together, from airport pickup to guarantor services.
+        - button "Banner slide 2" [ref=e64] [cursor=pointer]
+        - button "Banner slide 3" [ref=e66] [cursor=pointer]
+        - button "Banner slide 4" [ref=e68] [cursor=pointer]
+        - button "Banner slide 5" [ref=e70] [cursor=pointer]
+        - button "Banner slide 6" [ref=e72] [cursor=pointer]
+        - button "Banner slide 1" [ref=e74] [cursor=pointer]:
+          - generic [ref=e77]:
+            - 'heading "From Booking to Belonging: Welcome to UL Infinity" [level=1] [ref=e78]'
+            - paragraph [ref=e79]: We bring all move-in essentials together, from airport pickup to guarantor services.
+      - button "Scroll left" [ref=e80] [cursor=pointer]:
+        - img [ref=e82]
+      - button "Scroll right" [ref=e84] [cursor=pointer]:
+        - img [ref=e86]
+      - generic [ref=e88]:
+        - button "Go to slide 1" [ref=e89] [cursor=pointer]
+        - button "Go to slide 2" [ref=e90] [cursor=pointer]
+        - button "Go to slide 3" [ref=e91] [cursor=pointer]
+        - button "Go to slide 4" [ref=e92] [cursor=pointer]
+        - button "Go to slide 5" [ref=e93] [cursor=pointer]
+        - button "Go to slide 6" [ref=e94] [cursor=pointer]
+    - generic [ref=e96]:
+      - heading "Trending among students" [level=2] [ref=e97]
+      - generic [ref=e98]:
+        - button "Guarantor Service Verified guarantors to help unlock rent approvals abroad Guarantor Service" [ref=e100] [cursor=pointer]:
+          - generic [ref=e101]:
+            - paragraph [ref=e102]: Guarantor Service
+            - paragraph [ref=e103]: Verified guarantors to help unlock rent approvals abroad
+          - img "Guarantor Service" [ref=e106]
+        - button "Room Essentials Make your New Home comfortable Instantly Room Essentials" [ref=e108] [cursor=pointer]:
+          - generic [ref=e109]:
+            - paragraph [ref=e110]: Room Essentials
+            - paragraph [ref=e111]: Make your New Home comfortable Instantly
+          - img "Room Essentials" [ref=e114]
+        - button "Student bank account Bank Account setup made easy for your abroad expenses Student bank account" [ref=e116] [cursor=pointer]:
+          - generic [ref=e117]:
+            - paragraph [ref=e118]: Student bank account
+            - paragraph [ref=e119]: Bank Account setup made easy for your abroad expenses
+          - img "Student bank account" [ref=e122]
+        - button "International SIM Connect Abroad Easily with Pre-Activated SIM Cards International SIM" [ref=e124] [cursor=pointer]:
+          - generic [ref=e125]:
+            - paragraph [ref=e126]: International SIM
+            - paragraph [ref=e127]: Connect Abroad Easily with Pre-Activated SIM Cards
+          - img "International SIM" [ref=e130]
+        - button "Health insurance Travel safer with trusted coverage for unexpected situations Health insurance" [ref=e132] [cursor=pointer]:
+          - generic [ref=e133]:
+            - paragraph [ref=e134]: Health insurance
+            - paragraph [ref=e135]: Travel safer with trusted coverage for unexpected situations
+          - img "Health insurance" [ref=e138]
+    - generic [ref=e140]:
+      - generic [ref=e141]:
+        - heading "Top student deals and offers" [level=2] [ref=e143]
+        - generic [ref=e144]:
+          - button [disabled] [ref=e145]:
+            - img [ref=e146]
+          - button [ref=e148] [cursor=pointer]:
+            - img [ref=e149]
+      - generic [ref=e153]:
+        - generic [ref=e155]:
+          - generic [ref=e156]:
+            - generic [ref=e157]:
+              - generic [ref=e158]: Flights
+              - img "brand logo" [ref=e159]
+            - heading "Get discount upto 4000INR" [level=3] [ref=e160]
+            - generic [ref=e161]:
+              - img [ref=e162]
+              - generic [ref=e164]: 163 times used
+          - button "U TUL4 Reveal code" [ref=e166] [cursor=pointer]:
+            - generic [ref=e167]:
+              - generic [ref=e168]: U
+              - generic [ref=e169]: TUL4
+            - button "Reveal code" [ref=e170]
+        - generic [ref=e172]:
+          - generic [ref=e173]:
+            - generic [ref=e174]:
+              - generic [ref=e175]: Starter Kits
+              - img "brand logo" [ref=e176]
+            - heading "10% Off Hotel-Quality Bedding for Your Uni Room" [level=3] [ref=e177]
+            - generic [ref=e178]:
+              - img [ref=e179]
+              - generic [ref=e181]: 156 times used
+          - button "O TMEOUT Reveal code" [ref=e183] [cursor=pointer]:
+            - generic [ref=e184]:
+              - generic [ref=e185]: O
+              - generic [ref=e186]: TMEOUT
+            - button "Reveal code" [ref=e187]
+        - generic [ref=e189]:
+          - generic [ref=e190]:
+            - generic [ref=e191]:
+              - generic [ref=e192]: Starter Kits
+              - img "brand logo" [ref=e193]
+            - heading "10% Off the Complete Uni Essentials Kit" [level=3] [ref=e194]
+            - generic [ref=e195]:
+              - img [ref=e196]
+              - generic [ref=e198]: 132 times used
+          - button "O TMEOUT Reveal code" [ref=e200] [cursor=pointer]:
+            - generic [ref=e201]:
+              - generic [ref=e202]: O
+              - generic [ref=e203]: TMEOUT
+            - button "Reveal code" [ref=e204]
+        - generic [ref=e206]:
+          - generic [ref=e207]:
+            - generic [ref=e208]:
+              - generic [ref=e209]: Starter Kits
+              - img "brand logo" [ref=e210]
+            - heading "Sleep in Luxury – Save 10% on Premium Bedding Kit" [level=3] [ref=e211]
+            - generic [ref=e212]:
+              - img [ref=e213]
+              - generic [ref=e215]: 144 times used
+          - button "O TMEOUT Reveal code" [ref=e217] [cursor=pointer]:
+            - generic [ref=e218]:
+              - generic [ref=e219]: O
+              - generic [ref=e220]: TMEOUT
+            - button "Reveal code" [ref=e221]
+    - generic [ref=e223]:
+      - heading "What students book the most" [level=2] [ref=e226]
+      - generic [ref=e229]:
+        - 'link "Flight tickets Flight tickets Fly smart, save big: affordable student flight tickets for study & travel" [ref=e232] [cursor=pointer]':
+          - /url: /students-flight-ticket
+          - generic [ref=e233]:
+            - img "Flight tickets" [ref=e235]
+            - generic [ref=e236]:
+              - heading "Flight tickets" [level=3] [ref=e237]
+              - paragraph [ref=e238]: "Fly smart, save big: affordable student flight tickets for study & travel"
+        - link "Airport Pickup Airport Pickup Trusted airport pickup service for students — your first ride abroad made easy" [ref=e241] [cursor=pointer]:
+          - /url: /airport-pickup
+          - generic [ref=e242]:
+            - img "Airport Pickup" [ref=e244]
+            - generic [ref=e245]:
+              - heading "Airport Pickup" [level=3] [ref=e246]
+              - paragraph [ref=e247]: Trusted airport pickup service for students — your first ride abroad made easy
+        - link "International Money Transfer International Money Transfer Move your money across borders — built for students, trusted by parents" [ref=e250] [cursor=pointer]:
+          - /url: /remittance
+          - generic [ref=e251]:
+            - img "International Money Transfer" [ref=e253]
+            - generic [ref=e254]:
+              - heading "International Money Transfer" [level=3] [ref=e255]
+              - paragraph [ref=e256]: Move your money across borders — built for students, trusted by parents
+    - generic [ref=e258]:
+      - heading "We partnered with the most trusted brands" [level=2] [ref=e261]
+      - generic [ref=e266]:
+        - generic [ref=e270]:
+          - img "Sky Scanner" [ref=e273]
+          - img "Qatar Airways" [ref=e276]
+          - img "Jayride" [ref=e279]
+          - img "Sky Scanner" [ref=e282]
+          - img "Qatar Airways" [ref=e285]
+          - img "Jayride" [ref=e288]
+        - generic [ref=e292]:
+          - img "Uber" [ref=e295]
+          - img "Housing Hand" [ref=e298]
+          - img "Uber" [ref=e301]
+          - img "Housing Hand" [ref=e304]
+        - generic [ref=e308]:
+          - img "Zetexa" [ref=e311]
+          - img "Asego" [ref=e314]
+          - img "Zetexa" [ref=e317]
+          - img "Asego" [ref=e320]
+        - generic [ref=e324]:
+          - img "Grad Right" [ref=e327]
+          - img "Ebix" [ref=e330]
+          - img "Grad Right" [ref=e333]
+          - img "Ebix" [ref=e336]
+        - generic [ref=e340]:
+          - img "Thomas Cook" [ref=e343]
+          - img "ICICI Bank" [ref=e346]
+          - img "Thomas Cook" [ref=e349]
+          - img "ICICI Bank" [ref=e352]
+        - generic [ref=e356]:
+          - img "HSBC Bank" [ref=e359]
+          - img "Revolut" [ref=e362]
+          - img "HSBC Bank" [ref=e365]
+          - img "Revolut" [ref=e368]
+        - generic [ref=e372]:
+          - img "Make My Trip" [ref=e375]
+          - img "Indigo" [ref=e378]
+          - img "Make My Trip" [ref=e381]
+          - img "Indigo" [ref=e384]
+        - generic [ref=e388]:
+          - img "Emirates" [ref=e391]
+          - img "Etihad" [ref=e394]
+          - img "Shiprocket" [ref=e397]
+          - img "Emirates" [ref=e400]
+          - img "Etihad" [ref=e403]
+          - img "Shiprocket" [ref=e406]
+    - generic [ref=e408]:
+      - heading "Infinity provides flexible essential services to support your journey." [level=2] [ref=e409]
+      - paragraph [ref=e410]: Choose a plan, pick your services, and manage everything in one place.
+      - generic [ref=e411]:
+        - button "Infinity Lite" [ref=e412] [cursor=pointer]
+        - button "Infinity Plus" [ref=e413] [cursor=pointer]
+        - button "Infinity Elite" [ref=e414] [cursor=pointer]
+      - generic [ref=e415]:
+        - img "Infinity Lite Package" [ref=e417]
+        - generic [ref=e418]:
+          - paragraph [ref=e419]:
+            - text: "Infinity"
+            - text: Lite
+          - generic [ref=e420]:
+            - paragraph [ref=e421]:
+              - text: 3 free services
+              - generic [ref=e422]: (Forex card + International SIM + Airport Pickup worth £79 )
+            - generic [ref=e423]: + Add 5 other services of your choice
+          - button "Choose services" [ref=e424] [cursor=pointer]:
+            - generic [ref=e425]:
+              - text: Choose services
+              - img [ref=e426]
+    - generic [ref=e430]:
+      - generic [ref=e431]:
+        - generic [ref=e433]:
+          - img "star" [ref=e434]
+          - heading "Trust of over a million of students" [level=2] [ref=e435]
+        - generic [ref=e436]:
+          - button [disabled] [ref=e437]:
+            - img [ref=e438]
+          - button [ref=e440] [cursor=pointer]:
+            - img [ref=e441]
+      - generic [ref=e445]:
+        - button "University Living Student - Happy Student University Living Student Happy Student" [ref=e447] [cursor=pointer]:
+          - generic [ref=e448]:
+            - img "University Living Student - Happy Student" [ref=e449]
+            - img [ref=e453]
+            - generic [ref=e455]:
+              - heading "University Living Student" [level=4] [ref=e456]
+              - paragraph [ref=e457]: Happy Student
+        - generic [ref=e459]:
+          - heading "“University Living has helped me a lot”" [level=3] [ref=e460]
+          - paragraph [ref=e461]: University Living has helped me a lot! With the help from Yashi, I got the right accommodation for my graduate journey in Melbourne. Yashi find options that suits to my need and very helpful during every process. Grateful! I recommend everyone to get help from University Living.
+          - generic [ref=e462]:
+            - generic [ref=e463]: ENR
+            - heading "Elfin Nadia Rini" [level=4] [ref=e465]
+          - generic [ref=e466]:
+            - img [ref=e467]
+            - img [ref=e469]
+            - img [ref=e471]
+            - img [ref=e473]
+            - img [ref=e475]
+        - generic [ref=e478]:
+          - heading "“Had a delightful experience throughout”" [level=3] [ref=e479]
+          - paragraph [ref=e480]: Had a delightful experience throughout. Shiwanshu was very helpful and quickly responded to all my queries.
+          - generic [ref=e481]:
+            - generic [ref=e482]: AJ
+            - heading "Arwa Jinjriwala" [level=4] [ref=e484]
+          - generic [ref=e485]:
+            - img [ref=e486]
+            - img [ref=e488]
+            - img [ref=e490]
+            - img [ref=e492]
+            - img [ref=e494]
+        - generic [ref=e497]:
+          - heading "“Best accomodation providers”" [level=3] [ref=e498]
+          - paragraph [ref=e499]: University living provides the most genuine, Friendly and secure student accommodation. University Living members are very helpful and they are always ready to help me in any case. From my Personal Experience University Living got the best accommodation for student across the globe. They also help me in booking my flight tickets and other value added services like Opening the international bank account And my agent is Madhav , he helped me in everything related to the accomodation.. I am very thankful to him for his assistance...Overall I'm happy and satisfied due to the excellent customer services...
+          - generic [ref=e500]:
+            - generic [ref=e501]: LM
+            - heading "Lakshmi Mukundan" [level=4] [ref=e503]
+          - generic [ref=e504]:
+            - img [ref=e505]
+            - img [ref=e507]
+            - img [ref=e509]
+            - img [ref=e511]
+            - img [ref=e513]
+        - button "University Living Student - Happy Student University Living Student Happy Student" [ref=e516] [cursor=pointer]:
+          - generic [ref=e517]:
+            - img "University Living Student - Happy Student" [ref=e518]
+            - img [ref=e522]
+            - generic [ref=e524]:
+              - heading "University Living Student" [level=4] [ref=e525]
+              - paragraph [ref=e526]: Happy Student
+        - generic [ref=e528]:
+          - heading "“Kudos to Aradhana”" [level=3] [ref=e529]
+          - paragraph [ref=e530]: The representative named Aradhana was especially helpful throughout the process. She was well spoken and made the booking process extremely convenient.
+          - generic [ref=e531]:
+            - generic [ref=e532]: IA
+            - heading "Isaac Antonio" [level=4] [ref=e534]
+          - generic [ref=e535]:
+            - img [ref=e536]
+            - img [ref=e538]
+            - img [ref=e540]
+            - img [ref=e542]
+            - img [ref=e544]
+        - generic [ref=e547]:
+          - heading "“A big thanks to Madhav for helping me…”" [level=3] [ref=e548]
+          - paragraph [ref=e549]: A big thanks to Madhav for helping me find the best possible accommodation within my budget and fulfilling all my needs in the UK.He was in constant contact with me answering all my queries .I had a seamless experience.
+          - generic [ref=e550]:
+            - generic [ref=e551]: AK
+            - heading "Akshay Kumar" [level=4] [ref=e553]
+          - generic [ref=e554]:
+            - img [ref=e555]
+            - img [ref=e557]
+            - img [ref=e559]
+            - img [ref=e561]
+            - img [ref=e563]
+        - generic [ref=e566]:
+          - heading "“Perfect guidence and Quick service”" [level=3] [ref=e567]
+          - paragraph [ref=e568]: I am really thankful to Madhav for helping me through my accomodation process I was really not sure about how I'll be able to select the right place but he was really nice to help me and guide me through it all. Also there weren't many options available as my process was delayed but still he got me the best option that's is close to BCU Thank you so much for all the help. He also took the extra effort to resolve any other issue or doubts i had and was really quick in providing solutions. Thank you University living for your services.
+          - generic [ref=e569]:
+            - generic [ref=e570]: JKS
+            - heading "Jasmine Kaur Sethi" [level=4] [ref=e572]
+          - generic [ref=e573]:
+            - img [ref=e574]
+            - img [ref=e576]
+            - img [ref=e578]
+            - img [ref=e580]
+            - img [ref=e582]
+        - button "University Living Student - Happy Student University Living Student Happy Student" [ref=e585] [cursor=pointer]:
+          - generic [ref=e586]:
+            - img "University Living Student - Happy Student" [ref=e587]
+            - img [ref=e591]
+            - generic [ref=e593]:
+              - heading "University Living Student" [level=4] [ref=e594]
+              - paragraph [ref=e595]: Happy Student
+        - button "University Living Student - Happy Student University Living Student Happy Student" [ref=e597] [cursor=pointer]:
+          - generic [ref=e598]:
+            - img "University Living Student - Happy Student" [ref=e599]
+            - img [ref=e603]
+            - generic [ref=e605]:
+              - heading "University Living Student" [level=4] [ref=e606]
+              - paragraph [ref=e607]: Happy Student
+        - button "University Living Student - Happy Student University Living Student Happy Student" [ref=e609] [cursor=pointer]:
+          - generic [ref=e610]:
+            - img "University Living Student - Happy Student" [ref=e611]
+            - img [ref=e615]
+            - generic [ref=e617]:
+              - heading "University Living Student" [level=4] [ref=e618]
+              - paragraph [ref=e619]: Happy Student
+        - button "University Living Student - Happy Student University Living Student Happy Student" [ref=e621] [cursor=pointer]:
+          - generic [ref=e622]:
+            - img "University Living Student - Happy Student" [ref=e623]
+            - img [ref=e627]
+            - generic [ref=e629]:
+              - heading "University Living Student" [level=4] [ref=e630]
+              - paragraph [ref=e631]: Happy Student
+        - button "University Living Student - Happy Student University Living Student Happy Student" [ref=e633] [cursor=pointer]:
+          - generic [ref=e634]:
+            - img "University Living Student - Happy Student" [ref=e635]
+            - img [ref=e639]
+            - generic [ref=e641]:
+              - heading "University Living Student" [level=4] [ref=e642]
+              - paragraph [ref=e643]: Happy Student
+        - button "University Living Student - Happy Student University Living Student Happy Student" [ref=e645] [cursor=pointer]:
+          - generic [ref=e646]:
+            - img "University Living Student - Happy Student" [ref=e647]
+            - img [ref=e651]
+            - generic [ref=e653]:
+              - heading "University Living Student" [level=4] [ref=e654]
+              - paragraph [ref=e655]: Happy Student
+        - button "University Living Student - Happy Student University Living Student Happy Student" [ref=e657] [cursor=pointer]:
+          - generic [ref=e658]:
+            - img "University Living Student - Happy Student" [ref=e659]
+            - img [ref=e663]
+            - generic [ref=e665]:
+              - heading "University Living Student" [level=4] [ref=e666]
+              - paragraph [ref=e667]: Happy Student
+        - button "University Living Student - Happy Student University Living Student Happy Student" [ref=e669] [cursor=pointer]:
+          - generic [ref=e670]:
+            - img "University Living Student - Happy Student" [ref=e671]
+            - img [ref=e675]
+            - generic [ref=e677]:
+              - heading "University Living Student" [level=4] [ref=e678]
+              - paragraph [ref=e679]: Happy Student
+    - generic [ref=e682]:
+      - paragraph [ref=e683]: Not sure what to choose?
+      - paragraph [ref=e684]: Talk to a student expert and get clear guidance
+      - button "Book a free call" [ref=e685] [cursor=pointer]:
+        - generic [ref=e686]: Book a free call
+  - contentinfo [ref=e688]:
+    - generic [ref=e689]:
+      - generic [ref=e690]:
+        - img "Infinity Logo" [ref=e692]
+        - paragraph [ref=e693]: Everything you need to move abroad
+      - generic [ref=e695]:
+        - generic [ref=e696]:
+          - link "Blogs" [ref=e697] [cursor=pointer]:
+            - /url: https://www.universityliving.com/blog/
+          - link "Student accommodations" [ref=e698] [cursor=pointer]:
+            - /url: https://www.universityliving.com/
+          - link "Terms and conditions" [ref=e699] [cursor=pointer]:
+            - /url: "#"
+          - link "Privacy policy" [ref=e700] [cursor=pointer]:
+            - /url: "#"
+        - 'link "Reach us at: care@universityliving.com" [ref=e702] [cursor=pointer]':
+          - /url: mailto:care@universityliving.com
+      - generic [ref=e704]:
+        - link "App Store" [ref=e705] [cursor=pointer]:
+          - /url: https://www.universityliving.com/app?utm_category=footer&utm_medium=desktop&utm_source=ios
+          - img "App Store" [ref=e706]
+        - link "Google Play Store" [ref=e707] [cursor=pointer]:
+          - /url: https://www.universityliving.com/app?utm_category=footer&utm_medium=desktop&utm_source=android
+          - img "Google Play Store" [ref=e708]
+      - generic [ref=e709]: Powered by University Living
+    - generic:
+      - img "decorative grid"
+  - alert [ref=e710]
+  - button:
+    - generic:
+      - dialog:
+        - generic:
+          - paragraph: Terms and Conditions
+          - button:
+            - img
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - heading "1. Introduction & Acceptance of Terms" [level=3]
+                - generic:
+                  - paragraph:
+                    - strong: "1.1"
+                    - text: These Terms & Conditions (hereinafter referred to as "T&C") govern your access to and use of the website, domain, and digital platform (hereinafter referred to as "Platform") offering Value-Added Services (hereinafter referred to as "VAS") provided by University Living Accommodation Pvt. Ltd. (hereinafter referred to as "University Living" or "Company") bearing CIN U80301DL2016PTC292351 also hereby referred to as "we", "our" or "us".
+                  - paragraph:
+                    - strong: "1.2"
+                    - text: By accessing, browsing, registering, using or otherwise interacting with the Platform or our Services, you expressly agree to be bound by these Terms. If you do not agree with these T&C in full, you must immediately discontinue use of the Platform and our Services.
+                  - paragraph:
+                    - strong: "1.3"
+                    - text: We may update, modify, or amend these T&C at any time by updating this page. Your continued use of the Platform after such changes constitutes acceptance of the revised Terms.
+              - generic:
+                - heading "2. Definitions" [level=3]
+                - paragraph: "For purposes of these T&C:"
+                - list:
+                  - listitem: "\"User\", \"you\", \"your\" means the natural person or corporate entity accessing or using the Platform or Services."
+                  - listitem: "\"Value-Added Services\" or \"VAS\" means services offered on the Platform exclusive of the accommodation marketplace (www.universityliving.com), including but not limited to travel assistance, ticketing, visa support, insurance facilitation, forex assistance, guarantor services, advisory services, documentation support, and any related services (which the Company may or can add or remove at any point in time) globally."
+                  - listitem: "\"Service Providers\" means any third parties engaged by us to provide all or part of any VAS."
+              - generic:
+                - heading "3. Scope of the Value-Added Services" [level=3]
+                - generic:
+                  - paragraph:
+                    - strong: "3.1"
+                    - text: The Platform enables Users to request, book, order and receive VAS. We act primarily as facilitator, coordinator and service integrator, and unless expressly stated otherwise, we are not the direct provider of any services covered under VAS. Service delivery and quality for certain third-party services are governed by separate terms between the User and the original Service Provider.
+                  - paragraph:
+                    - strong: "3.2"
+                    - text: We do not guarantee availability, outcomes, eligibility, approval, or results of any VAS and, except as expressly agreed in a separate written contract, accept no liability for outcomes arising from any third-party or partner services. Any disputes arising in such regard shall be between the User and such original Service Provider.
+              - generic:
+                - heading "4. User Accounts & Registration" [level=3]
+                - generic:
+                  - paragraph:
+                    - strong: "4.1"
+                    - text: Certain Services offered on this Platform require account creation or registration. By registering, you represent and warrant that all information provided is accurate, complete and up-to-date. You are responsible for safeguarding any login credentials and for all activities conducted under your account.
+                  - paragraph:
+                    - strong: "4.2"
+                    - text: We may suspend or terminate account access if you violate these T&C, provide fraudulent information, or misuse the Platform by any means.
+              - generic:
+                - heading "5. Payments, Fees & Billing" [level=3]
+                - generic:
+                  - paragraph:
+                    - strong: "5.1"
+                    - text: For VAS that require payment, you agree to pay all applicable fees, charges and taxes as specified at the time of purchase (hereinafter referred to as "Fees"). Fees may vary by Service and geography.
+                  - paragraph:
+                    - strong: "5.2"
+                    - text: Payments may be processed through third-party payment gateways. We are not responsible for payment gateway errors, processing delays, refunds or data inaccuracies transmitted by such third parties.
+                  - paragraph:
+                    - strong: "5.3"
+                    - text: Fees are non-refundable except as expressly provided in these T&C or in a separate service order agreed between the parties.
+              - generic:
+                - heading "6. Use of the Platform & Prohibited Conduct" [level=3]
+                - generic:
+                  - paragraph:
+                    - strong: "6.1"
+                    - text: You may use the Platform only for lawful purposes and in compliance with these T&C and any applicable local, national and international laws.
+                  - paragraph:
+                    - strong: "6.2"
+                    - text: "You shall not:"
+                  - list:
+                    - listitem: interfere with the operation(s) of the Platform;
+                    - listitem: use any automated tools (bots, scrapers, robots, etc.) without prior written consent;
+                    - listitem: transmit harmful, unlawful or offensive content;
+                    - listitem: impersonate any other person or entity; or
+                    - listitem: violate the rights of any third party.
+              - generic:
+                - heading "7. Intellectual Property Rights (IPR)" [level=3]
+                - generic:
+                  - paragraph:
+                    - strong: "7.1"
+                    - text: The Platform and all related content, namely the text, logos, graphics, trademarks, designs, processes and all materials (hereinafter referred to as "Content") are all owned or licensed by us (University Living) and are protected by intellectual property laws. Except as expressly permitted, you may not copy, reproduce, republish, upload, post, transmit or distribute any Content without our prior written consent.
+                  - paragraph:
+                    - strong: "7.2"
+                    - text: You retain ownership of any data or materials provided by you; however, by submitting such content you grant us a worldwide, non-exclusive license to use, display, reproduce and distribute that content solely for provision of the Services.
+              - generic:
+                - heading "8. Data, Privacy & Cookies" [level=3]
+                - generic:
+                  - paragraph:
+                    - strong: "8.1"
+                    - text: Our processing of personal data is governed by our Privacy Policy, which forms part of these Terms.
+                  - paragraph:
+                    - strong: "8.2"
+                    - text: By using the Platform and Services, you consent to the collection, processing and transfer of your personal data across jurisdictions as necessary to provide Services and as permitted by law.
+                  - paragraph:
+                    - strong: "8.3"
+                    - text: You agree that we may share necessary data with Service Providers to facilitate the delivery of Services.
+              - generic:
+                - heading "9. Disclaimers & Limitation of Liability" [level=3]
+                - generic:
+                  - paragraph:
+                    - strong: "9.1"
+                    - text: ALL SERVICES AND PLATFORM CONTENT ARE PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, WHATSOEVER.
+                  - paragraph:
+                    - strong: "9.2"
+                    - text: TO THE MAXIMUM EXTENT PERMITTED BY LAW, WE DISCLAIM ALL WARRANTIES INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT.
+                  - paragraph:
+                    - strong: "9.3"
+                    - text: IN NO EVENT SHALL WE BE HELD LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, PUNITIVE, CONSEQUENTIAL DAMAGES OR LOSS OF PROFITS, REVENUE, DATA OR CUSTOMER GOODWILL, ARISING OUT OF OR RELATED TO THESE TERMS OR THE SERVICES, WHETHER BASED ON CONTRACT, TORT, NEGLIGENCE, STRICT LIABILITY OR OTHERWISE.
+                  - paragraph:
+                    - strong: "9.4"
+                    - text: Nothing in these T&C limits liability for death or personal injury caused by our negligence or for any other liability which cannot be limited or excluded by applicable law.
+              - generic:
+                - heading "10. Governing Law & Dispute Resolution" [level=3]
+                - paragraph:
+                  - strong: "10.1"
+                  - text: These T&C shall be governed by the laws of India. Any dispute arising out of or relating to these Terms shall be subject to the exclusive jurisdiction of courts in New Delhi, India.
+              - generic:
+                - heading "11. Third-Party Links & Services" [level=3]
+                - generic:
+                  - paragraph:
+                    - strong: "11.1"
+                    - text: The Platform may contain links to third-party websites or services not owned or controlled by us. We are not responsible for the content or practices of such third parties.
+                  - paragraph:
+                    - strong: "11.2"
+                    - text: Use of third-party links or services is at your own risk and subject to their own terms and policies.
+              - generic:
+                - heading "12. Termination & Suspension" [level=3]
+                - paragraph:
+                  - strong: "12.1"
+                  - text: We reserve the right, in our sole discretion, to suspend or terminate your access to the Platform or to any of our Services, with or without cause, and with or without notice.
+              - generic:
+                - heading "13. Updates to Terms" [level=3]
+                - paragraph:
+                  - strong: "13.1"
+                  - text: We may revise these T&C at any time. Revised T&C will take effect when published on the Platform. Your continued use of the Platform after such changes signifies your acceptance of the revised T&C.
+              - generic:
+                - heading "14. Contact Us" [level=3]
+                - paragraph: "If you have questions or concerns about these Terms, please contact us at:"
+                - paragraph:
+                  - text: University Living Accommodation Pvt. Ltd. via email at
+                  - link "care@universityliving.com":
+                    - /url: mailto:care@universityliving.com
+        - generic:
+          - button
+  - button:
+    - generic:
+      - dialog:
+        - generic:
+          - paragraph: Privacy Policy
+          - button:
+            - img
+        - generic:
+          - generic:
+            - generic: Loading...
+        - generic:
+          - button
+```

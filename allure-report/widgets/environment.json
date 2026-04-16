@@ -1,1 +1,1 @@
-[]
+[{"values":["Chromium"],"name":"Browser"},{"values":["QA"],"name":"Environment"},{"values":["URL=https://ul-infinity-smoky.vercel.app"],"name":"Base"},{"values":["Kanhaiya"],"name":"Tester"},{"values":["Framework=Playwright"],"name":"Automation"}]

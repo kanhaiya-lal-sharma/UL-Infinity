@@ -1,1 +1,1 @@
-{"reportName":"Allure Report","testRuns":[],"statistic":{"failed":0,"broken":0,"skipped":0,"passed":18,"unknown":0,"total":18},"time":{"start":1775130607817,"stop":1775130713882,"duration":106065,"minDuration":7675,"maxDuration":32114,"sumDuration":404334}}
+{"reportName":"UL-Infinity Automation Report","testRuns":[],"statistic":{"failed":0,"broken":1,"skipped":0,"passed":17,"unknown":0,"total":18},"time":{"start":1776234878102,"stop":1776235078528,"duration":200426,"minDuration":6973,"maxDuration":30704,"sumDuration":394998}}

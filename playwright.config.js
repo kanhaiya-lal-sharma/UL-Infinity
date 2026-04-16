@@ -33,6 +33,9 @@ export default defineConfig({
     trace: 'on-first-retry',
   },
 
+    globalSetup: require.resolve('./global-setup.js'),
+  globalTeardown: require.resolve('./global-teardown.js'),
+
   projects: [
     {
       name: 'chromium',

@@ -1,0 +1,369 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - banner [ref=e3]:
+    - generic [ref=e5]:
+      - link "Infinity logo Everything you need to move abroad." [ref=e7] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e8]:
+          - img "Infinity logo" [ref=e9]
+          - generic [ref=e10]:
+            - img [ref=e11]
+            - generic [ref=e20]: Everything you need to move abroad.
+      - navigation [ref=e21]:
+        - button "Housing" [ref=e23] [cursor=pointer]:
+          - text: Housing
+          - img [ref=e24]
+        - button "Finance" [ref=e27] [cursor=pointer]:
+          - text: Finance
+          - img [ref=e28]
+        - button "Travel" [ref=e31] [cursor=pointer]:
+          - text: Travel
+          - img [ref=e32]
+        - button "Essentials" [ref=e35] [cursor=pointer]:
+          - text: Essentials
+          - img [ref=e36]
+        - button "Health" [ref=e39] [cursor=pointer]:
+          - text: Health
+          - img [ref=e40]
+        - button "Career" [ref=e43] [cursor=pointer]:
+          - text: Career
+          - img [ref=e44]
+  - main [ref=e46]:
+    - generic [ref=e47]:
+      - text: "*"
+      - img "Student Flight Tickets" [ref=e49]
+      - generic [ref=e52]:
+        - generic [ref=e53]:
+          - heading "Student Flight Tickets" [level=1] [ref=e54]
+          - paragraph [ref=e55]: Fly smarter, save big with student-friendly perks.
+          - generic [ref=e56]:
+            - paragraph [ref=e57]: Our official partners
+            - generic [ref=e58]:
+              - img "Sky Scanner logo" [ref=e60]
+              - img "Emirates logo" [ref=e63]
+              - img "Make my trip logo" [ref=e66]
+              - img "Qatar Airways logo" [ref=e69]
+              - img "Air India logo" [ref=e72]
+        - generic [ref=e75]:
+          - generic [ref=e76]:
+            - generic [ref=e77]:
+              - button "One Way" [ref=e78] [cursor=pointer]
+              - button "Round Trip" [ref=e79] [cursor=pointer]
+            - generic [ref=e80]:
+              - img [ref=e81]
+              - generic [ref=e83]: Student Special Rates
+          - generic [ref=e84]:
+            - generic [ref=e85]:
+              - generic [ref=e86]:
+                - button "Flying From DEL DEL New Delhi" [ref=e87] [cursor=pointer]:
+                  - generic [ref=e88]: Flying From
+                  - textbox [ref=e89]: DEL
+                  - generic [ref=e90]:
+                    - paragraph [ref=e91]: DEL
+                    - paragraph [ref=e92]: New Delhi
+                - button "Flying To JFK JFK New York" [ref=e93] [cursor=pointer]:
+                  - generic [ref=e94]: Flying To
+                  - textbox [ref=e95]: JFK
+                  - generic [ref=e96]:
+                    - paragraph [ref=e97]: JFK
+                    - paragraph [ref=e98]: New York
+              - generic [ref=e99]:
+                - generic [ref=e100]:
+                  - button "Departure 07 Apr 2026 07 Apr 2026 Tuesday" [ref=e101] [cursor=pointer]:
+                    - generic [ref=e102]: Departure
+                    - textbox [ref=e103]: 07 Apr 2026
+                    - paragraph [ref=e104]: 07 Apr 2026
+                    - paragraph [ref=e105]: Tuesday
+                  - button "Return Add Return Date + Add Return Date" [ref=e106] [cursor=pointer]:
+                    - generic [ref=e107]: Return
+                    - textbox [ref=e108]: Add Return Date
+                    - paragraph [ref=e111]: + Add Return Date
+                - button "Travelers & Class 1 Traveler, Economy 1 Traveler Economy" [ref=e112] [cursor=pointer]:
+                  - generic [ref=e113]: Travelers & Class
+                  - textbox [ref=e114]: 1 Traveler, Economy
+                  - generic [ref=e115]:
+                    - generic [ref=e116]:
+                      - paragraph [ref=e117]: 1 Traveler
+                      - paragraph [ref=e118]: Economy
+                    - img [ref=e119]
+            - button "SEARCH FLIGHT TICKETS" [ref=e121] [cursor=pointer]:
+              - generic [ref=e122]: SEARCH FLIGHT TICKETS
+              - img [ref=e123]
+          - button "Close modal" [ref=e125] [cursor=pointer]
+          - generic [ref=e127]:
+            - button [ref=e128] [cursor=pointer]:
+              - img [ref=e129]
+            - generic [ref=e131]:
+              - heading "Book Flight Tickets" [level=4] [ref=e132]
+              - paragraph [ref=e133]: Leave us your contact details and get exclusive offers on international flight bookings.
+            - generic [ref=e134]:
+              - generic [ref=e135]:
+                - generic [ref=e136]:
+                  - textbox "First Name" [ref=e137]: kanhaiya
+                  - generic:
+                    - text: First Name
+                    - superscript: "*"
+                - generic [ref=e138]:
+                  - textbox "Last Name" [ref=e139]: sharma
+                  - generic:
+                    - text: Last Name
+                    - superscript: "*"
+              - generic [ref=e140]:
+                - generic [ref=e141]:
+                  - textbox "Email" [active] [ref=e142]: studentFlightTicket_20264712355.university@yopmail.com
+                  - generic:
+                    - text: Email
+                    - superscript: "*"
+                - generic [ref=e144]:
+                  - generic:
+                    - text: Contact Number
+                    - superscript: "*"
+                  - generic [ref=e145]:
+                    - text: "*"
+                    - textbox "Contact Number" [ref=e146]: "+91"
+                    - 'button "India: + 91" [ref=e148] [cursor=pointer]'
+              - button "Search flights" [ref=e152] [cursor=pointer]:
+                - generic [ref=e153]: Search flights
+    - generic [ref=e155]:
+      - generic [ref=e158]:
+        - heading "Services often booked together" [level=2] [ref=e161]
+        - generic [ref=e164]:
+          - button "Airport Pickup Trusted airport pickup service for students — your first ride abroad made easy Airport Pickup" [ref=e166] [cursor=pointer]:
+            - generic [ref=e167]:
+              - paragraph [ref=e168]: Airport Pickup
+              - paragraph [ref=e169]: Trusted airport pickup service for students — your first ride abroad made easy
+            - img "Airport Pickup" [ref=e172]
+          - button "Travel Insurance International student travel insurance — coverage you can trust Travel Insurance" [ref=e174] [cursor=pointer]:
+            - generic [ref=e175]:
+              - paragraph [ref=e176]: Travel Insurance
+              - paragraph [ref=e177]: International student travel insurance — coverage you can trust
+            - img "Travel Insurance" [ref=e180]
+          - button "Room Essentials Make your new home comfortable instantly - no last-minute shopping stress Room Essentials" [ref=e182] [cursor=pointer]:
+            - generic [ref=e183]:
+              - paragraph [ref=e184]: Room Essentials
+              - paragraph [ref=e185]: Make your new home comfortable instantly - no last-minute shopping stress
+            - img "Room Essentials" [ref=e188]
+      - generic [ref=e191]:
+        - heading "Why choose us?" [level=2] [ref=e194]
+        - generic [ref=e197]:
+          - generic [ref=e199]:
+            - img "Flight discounts for both domestic & international" [ref=e201]
+            - generic:
+              - img
+            - paragraph [ref=e202]: Flight discounts for both domestic & international
+          - generic [ref=e204]:
+            - img "Travel stress free with flexible bookings" [ref=e206]
+            - generic:
+              - img
+            - paragraph [ref=e207]: Travel stress free with flexible bookings
+          - generic [ref=e209]:
+            - img "Simple & fast booking with personal assistance" [ref=e211]
+            - generic:
+              - img
+            - paragraph [ref=e212]: Simple & fast booking with personal assistance
+      - generic [ref=e213]:
+        - heading "Frequently asked question" [level=2] [ref=e214]
+        - generic [ref=e215]:
+          - generic [ref=e216]:
+            - button "Can you share a phone number on which we can reach out for queries?" [ref=e217] [cursor=pointer]:
+              - heading "Can you share a phone number on which we can reach out for queries?" [level=3] [ref=e218]
+              - img [ref=e219]
+            - paragraph [ref=e221]: In case of any query or emergency, you can call on (0124) 4628747.
+          - generic [ref=e222]:
+            - button "How can I make a change to my online booking and what is the refund process?" [ref=e223] [cursor=pointer]:
+              - heading "How can I make a change to my online booking and what is the refund process?" [level=3] [ref=e224]
+              - img [ref=e225]
+            - paragraph [ref=e227]: You can choose to modify your booking by going to the My Trips section in the app or on the website. Airlines charge a date change penalty for doing so.Information related to refund shall be provided while you make the changes to your booking.
+          - generic [ref=e228]:
+            - button "Can you share details about the cancellation and refund policies along with the timelines?" [ref=e229] [cursor=pointer]:
+              - heading "Can you share details about the cancellation and refund policies along with the timelines?" [level=3] [ref=e230]
+              - img [ref=e231]
+            - paragraph [ref=e233]: The cancellation and refund policies can be checked in the “My Trips” section in the app or on the website.Information related to the same shall be provided when you make the changes to your booking.
+        - button "View More" [ref=e235] [cursor=pointer]:
+          - generic [ref=e236]: View More
+  - contentinfo [ref=e237]:
+    - generic [ref=e238]:
+      - generic [ref=e239]:
+        - img "Infinity Logo" [ref=e241]
+        - paragraph [ref=e242]: Everything you need to move abroad
+      - generic [ref=e244]:
+        - generic [ref=e245]:
+          - link "Blogs" [ref=e246] [cursor=pointer]:
+            - /url: https://www.universityliving.com/blog/
+          - link "Student accommodations" [ref=e247] [cursor=pointer]:
+            - /url: https://www.universityliving.com/
+          - link "Terms and conditions" [ref=e248] [cursor=pointer]:
+            - /url: "#"
+          - link "Privacy policy" [ref=e249] [cursor=pointer]:
+            - /url: "#"
+        - 'link "Reach us at: care@universityliving.com" [ref=e251] [cursor=pointer]':
+          - /url: mailto:care@universityliving.com
+      - generic [ref=e253]:
+        - link "App Store" [ref=e254] [cursor=pointer]:
+          - /url: https://www.universityliving.com/app?utm_category=footer&utm_medium=desktop&utm_source=ios
+          - img "App Store" [ref=e255]
+        - link "Google Play Store" [ref=e256] [cursor=pointer]:
+          - /url: https://www.universityliving.com/app?utm_category=footer&utm_medium=desktop&utm_source=android
+          - img "Google Play Store" [ref=e257]
+      - generic [ref=e258]: Powered by University Living
+    - generic:
+      - img "decorative grid"
+  - alert [ref=e259]
+  - button:
+    - generic:
+      - dialog:
+        - generic:
+          - paragraph: Terms and Conditions
+          - button:
+            - img
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - heading "1. Introduction & Acceptance of Terms" [level=3]
+                - generic:
+                  - paragraph:
+                    - strong: "1.1"
+                    - text: These Terms & Conditions (hereinafter referred to as "T&C") govern your access to and use of the website, domain, and digital platform (hereinafter referred to as "Platform") offering Value-Added Services (hereinafter referred to as "VAS") provided by University Living Accommodation Pvt. Ltd. (hereinafter referred to as "University Living" or "Company") bearing CIN U80301DL2016PTC292351 also hereby referred to as "we", "our" or "us".
+                  - paragraph:
+                    - strong: "1.2"
+                    - text: By accessing, browsing, registering, using or otherwise interacting with the Platform or our Services, you expressly agree to be bound by these Terms. If you do not agree with these T&C in full, you must immediately discontinue use of the Platform and our Services.
+                  - paragraph:
+                    - strong: "1.3"
+                    - text: We may update, modify, or amend these T&C at any time by updating this page. Your continued use of the Platform after such changes constitutes acceptance of the revised Terms.
+              - generic:
+                - heading "2. Definitions" [level=3]
+                - paragraph: "For purposes of these T&C:"
+                - list:
+                  - listitem: "\"User\", \"you\", \"your\" means the natural person or corporate entity accessing or using the Platform or Services."
+                  - listitem: "\"Value-Added Services\" or \"VAS\" means services offered on the Platform exclusive of the accommodation marketplace (www.universityliving.com), including but not limited to travel assistance, ticketing, visa support, insurance facilitation, forex assistance, guarantor services, advisory services, documentation support, and any related services (which the Company may or can add or remove at any point in time) globally."
+                  - listitem: "\"Service Providers\" means any third parties engaged by us to provide all or part of any VAS."
+              - generic:
+                - heading "3. Scope of the Value-Added Services" [level=3]
+                - generic:
+                  - paragraph:
+                    - strong: "3.1"
+                    - text: The Platform enables Users to request, book, order and receive VAS. We act primarily as facilitator, coordinator and service integrator, and unless expressly stated otherwise, we are not the direct provider of any services covered under VAS. Service delivery and quality for certain third-party services are governed by separate terms between the User and the original Service Provider.
+                  - paragraph:
+                    - strong: "3.2"
+                    - text: We do not guarantee availability, outcomes, eligibility, approval, or results of any VAS and, except as expressly agreed in a separate written contract, accept no liability for outcomes arising from any third-party or partner services. Any disputes arising in such regard shall be between the User and such original Service Provider.
+              - generic:
+                - heading "4. User Accounts & Registration" [level=3]
+                - generic:
+                  - paragraph:
+                    - strong: "4.1"
+                    - text: Certain Services offered on this Platform require account creation or registration. By registering, you represent and warrant that all information provided is accurate, complete and up-to-date. You are responsible for safeguarding any login credentials and for all activities conducted under your account.
+                  - paragraph:
+                    - strong: "4.2"
+                    - text: We may suspend or terminate account access if you violate these T&C, provide fraudulent information, or misuse the Platform by any means.
+              - generic:
+                - heading "5. Payments, Fees & Billing" [level=3]
+                - generic:
+                  - paragraph:
+                    - strong: "5.1"
+                    - text: For VAS that require payment, you agree to pay all applicable fees, charges and taxes as specified at the time of purchase (hereinafter referred to as "Fees"). Fees may vary by Service and geography.
+                  - paragraph:
+                    - strong: "5.2"
+                    - text: Payments may be processed through third-party payment gateways. We are not responsible for payment gateway errors, processing delays, refunds or data inaccuracies transmitted by such third parties.
+                  - paragraph:
+                    - strong: "5.3"
+                    - text: Fees are non-refundable except as expressly provided in these T&C or in a separate service order agreed between the parties.
+              - generic:
+                - heading "6. Use of the Platform & Prohibited Conduct" [level=3]
+                - generic:
+                  - paragraph:
+                    - strong: "6.1"
+                    - text: You may use the Platform only for lawful purposes and in compliance with these T&C and any applicable local, national and international laws.
+                  - paragraph:
+                    - strong: "6.2"
+                    - text: "You shall not:"
+                  - list:
+                    - listitem: interfere with the operation(s) of the Platform;
+                    - listitem: use any automated tools (bots, scrapers, robots, etc.) without prior written consent;
+                    - listitem: transmit harmful, unlawful or offensive content;
+                    - listitem: impersonate any other person or entity; or
+                    - listitem: violate the rights of any third party.
+              - generic:
+                - heading "7. Intellectual Property Rights (IPR)" [level=3]
+                - generic:
+                  - paragraph:
+                    - strong: "7.1"
+                    - text: The Platform and all related content, namely the text, logos, graphics, trademarks, designs, processes and all materials (hereinafter referred to as "Content") are all owned or licensed by us (University Living) and are protected by intellectual property laws. Except as expressly permitted, you may not copy, reproduce, republish, upload, post, transmit or distribute any Content without our prior written consent.
+                  - paragraph:
+                    - strong: "7.2"
+                    - text: You retain ownership of any data or materials provided by you; however, by submitting such content you grant us a worldwide, non-exclusive license to use, display, reproduce and distribute that content solely for provision of the Services.
+              - generic:
+                - heading "8. Data, Privacy & Cookies" [level=3]
+                - generic:
+                  - paragraph:
+                    - strong: "8.1"
+                    - text: Our processing of personal data is governed by our Privacy Policy, which forms part of these Terms.
+                  - paragraph:
+                    - strong: "8.2"
+                    - text: By using the Platform and Services, you consent to the collection, processing and transfer of your personal data across jurisdictions as necessary to provide Services and as permitted by law.
+                  - paragraph:
+                    - strong: "8.3"
+                    - text: You agree that we may share necessary data with Service Providers to facilitate the delivery of Services.
+              - generic:
+                - heading "9. Disclaimers & Limitation of Liability" [level=3]
+                - generic:
+                  - paragraph:
+                    - strong: "9.1"
+                    - text: ALL SERVICES AND PLATFORM CONTENT ARE PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, WHATSOEVER.
+                  - paragraph:
+                    - strong: "9.2"
+                    - text: TO THE MAXIMUM EXTENT PERMITTED BY LAW, WE DISCLAIM ALL WARRANTIES INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT.
+                  - paragraph:
+                    - strong: "9.3"
+                    - text: IN NO EVENT SHALL WE BE HELD LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, PUNITIVE, CONSEQUENTIAL DAMAGES OR LOSS OF PROFITS, REVENUE, DATA OR CUSTOMER GOODWILL, ARISING OUT OF OR RELATED TO THESE TERMS OR THE SERVICES, WHETHER BASED ON CONTRACT, TORT, NEGLIGENCE, STRICT LIABILITY OR OTHERWISE.
+                  - paragraph:
+                    - strong: "9.4"
+                    - text: Nothing in these T&C limits liability for death or personal injury caused by our negligence or for any other liability which cannot be limited or excluded by applicable law.
+              - generic:
+                - heading "10. Governing Law & Dispute Resolution" [level=3]
+                - paragraph:
+                  - strong: "10.1"
+                  - text: These T&C shall be governed by the laws of India. Any dispute arising out of or relating to these Terms shall be subject to the exclusive jurisdiction of courts in New Delhi, India.
+              - generic:
+                - heading "11. Third-Party Links & Services" [level=3]
+                - generic:
+                  - paragraph:
+                    - strong: "11.1"
+                    - text: The Platform may contain links to third-party websites or services not owned or controlled by us. We are not responsible for the content or practices of such third parties.
+                  - paragraph:
+                    - strong: "11.2"
+                    - text: Use of third-party links or services is at your own risk and subject to their own terms and policies.
+              - generic:
+                - heading "12. Termination & Suspension" [level=3]
+                - paragraph:
+                  - strong: "12.1"
+                  - text: We reserve the right, in our sole discretion, to suspend or terminate your access to the Platform or to any of our Services, with or without cause, and with or without notice.
+              - generic:
+                - heading "13. Updates to Terms" [level=3]
+                - paragraph:
+                  - strong: "13.1"
+                  - text: We may revise these T&C at any time. Revised T&C will take effect when published on the Platform. Your continued use of the Platform after such changes signifies your acceptance of the revised T&C.
+              - generic:
+                - heading "14. Contact Us" [level=3]
+                - paragraph: "If you have questions or concerns about these Terms, please contact us at:"
+                - paragraph:
+                  - text: University Living Accommodation Pvt. Ltd. via email at
+                  - link "care@universityliving.com":
+                    - /url: mailto:care@universityliving.com
+        - generic:
+          - button
+  - button:
+    - generic:
+      - dialog:
+        - generic:
+          - paragraph: Privacy Policy
+          - button:
+            - img
+        - generic:
+          - generic:
+            - generic: Loading...
+        - generic:
+          - button
+```

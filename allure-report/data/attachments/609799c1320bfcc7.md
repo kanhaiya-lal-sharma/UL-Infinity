@@ -1,0 +1,481 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - banner [ref=e3]:
+    - generic [ref=e5]:
+      - link "Infinity logo Everything you need to move abroad." [ref=e7] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e8]:
+          - img "Infinity logo" [ref=e9]
+          - generic [ref=e10]:
+            - img [ref=e11]
+            - generic [ref=e20]: Everything you need to move abroad.
+      - navigation [ref=e21]:
+        - button "Housing" [ref=e23] [cursor=pointer]:
+          - text: Housing
+          - img [ref=e24]
+        - button "Finance" [ref=e27] [cursor=pointer]:
+          - text: Finance
+          - img [ref=e28]
+        - button "Travel" [ref=e31] [cursor=pointer]:
+          - text: Travel
+          - img [ref=e32]
+        - button "Essentials" [ref=e35] [cursor=pointer]:
+          - text: Essentials
+          - img [ref=e36]
+        - button "Health" [ref=e39] [cursor=pointer]:
+          - text: Health
+          - img [ref=e40]
+        - button "Career" [ref=e43] [cursor=pointer]:
+          - text: Career
+          - img [ref=e44]
+  - main [ref=e46]:
+    - generic [ref=e47]:
+      - text: "*"
+      - img "Health Insurance" [ref=e49]
+      - generic [ref=e52]:
+        - generic [ref=e53]:
+          - heading "Health Insurance" [level=1] [ref=e54]
+          - paragraph [ref=e55]: Student health insurance abroad - stay protected overseas
+          - generic [ref=e56]:
+            - paragraph [ref=e57]: Our official partners
+            - generic [ref=e58]:
+              - img "Matrix logo" [ref=e60]
+              - img "Asego logo" [ref=e63]
+              - img "Study and Protect logo" [ref=e66]
+        - generic [ref=e68]:
+          - generic [ref=e69]:
+            - img [ref=e71]
+            - generic [ref=e73]: Get Health Insurance
+          - generic [ref=e75]:
+            - generic [ref=e76]:
+              - generic [ref=e77]:
+                - combobox [ref=e78]:
+                  - option "Select Country *" [disabled] [selected]
+                  - option "Australia"
+                  - option "United States"
+                  - option "Ireland"
+                - generic:
+                  - img
+                - generic:
+                  - text: Destination Country
+                  - superscript: "*"
+              - generic:
+                - generic:
+                  - combobox:
+                    - option "Select a Country first" [disabled] [selected]
+                  - generic:
+                    - img
+                  - generic:
+                    - text: Provider
+                    - superscript: "*"
+            - generic [ref=e79]:
+              - generic [ref=e80]:
+                - textbox "First name *" [ref=e81]
+                - generic:
+                  - text: First name
+                  - superscript: "*"
+              - generic [ref=e82]:
+                - textbox "Last name *" [ref=e83]
+                - generic:
+                  - text: Last name
+                  - superscript: "*"
+            - generic [ref=e84]:
+              - generic [ref=e85]:
+                - textbox "Email *" [ref=e86]
+                - generic:
+                  - text: Email
+                  - superscript: "*"
+              - generic [ref=e87]:
+                - generic:
+                  - text: Phone number
+                  - superscript: "*"
+                - generic [ref=e88]:
+                  - text: "*"
+                  - textbox "Phone number *" [ref=e89]: "+91"
+                  - 'button "India: + 91" [ref=e91] [cursor=pointer]'
+            - button "Get Health Insurance" [ref=e95] [cursor=pointer]:
+              - generic [ref=e96]: Get Health Insurance
+    - generic [ref=e98]:
+      - generic [ref=e101]:
+        - heading "Services often booked together" [level=2] [ref=e104]
+        - generic [ref=e107]:
+          - button "Student Bank Account Your financial home abroad — student bank accounts with zero hassle Student Bank Account" [ref=e109] [cursor=pointer]:
+            - generic [ref=e110]:
+              - paragraph [ref=e111]: Student Bank Account
+              - paragraph [ref=e112]: Your financial home abroad — student bank accounts with zero hassle
+            - img "Student Bank Account" [ref=e115]
+          - 'button "Flight tickets Fly smart, save big: affordable student flight tickets for study & travel Flight tickets" [ref=e117] [cursor=pointer]':
+            - generic [ref=e118]:
+              - paragraph [ref=e119]: Flight tickets
+              - paragraph [ref=e120]: "Fly smart, save big: affordable student flight tickets for study & travel"
+            - img "Flight tickets" [ref=e123]
+          - button "International SIM Connect abroad easily — student SIM cards with data, calls & texts International SIM" [ref=e125] [cursor=pointer]:
+            - generic [ref=e126]:
+              - paragraph [ref=e127]: International SIM
+              - paragraph [ref=e128]: Connect abroad easily — student SIM cards with data, calls & texts
+            - img "International SIM" [ref=e131]
+      - generic [ref=e134]:
+        - heading "Why choose us?" [level=2] [ref=e137]
+        - generic [ref=e140]:
+          - generic [ref=e142]:
+            - img "Meets university & visa requirements" [ref=e144]
+            - generic:
+              - img
+            - paragraph [ref=e145]: Meets university & visa requirements
+          - generic [ref=e147]:
+            - img "Round the clock emergency support" [ref=e149]
+            - generic:
+              - img
+            - paragraph [ref=e150]: Round the clock emergency support
+          - generic [ref=e152]:
+            - img "Transparent coverage & no hidden fees" [ref=e154]
+            - generic:
+              - img
+            - paragraph [ref=e155]: Transparent coverage & no hidden fees
+      - generic [ref=e156]:
+        - heading "Frequently asked question" [level=2] [ref=e157]
+        - generic [ref=e158]:
+          - button "Insurance Plan" [ref=e159] [cursor=pointer]
+          - button "General" [ref=e160] [cursor=pointer]
+        - generic [ref=e161]:
+          - generic [ref=e162]:
+            - button "When will I receive the policy certificate?" [ref=e163] [cursor=pointer]:
+              - heading "When will I receive the policy certificate?" [level=3] [ref=e164]
+              - img [ref=e165]
+            - paragraph [ref=e167]: After you make the payment, the policy certificate will be immediately sent to the registered email address. If you have made changes in the date or extended the policy, the confirmation will be sent within 24-48 hours.
+          - generic [ref=e168]:
+            - button "Can I switch to a different policy?" [ref=e169] [cursor=pointer]:
+              - heading "Can I switch to a different policy?" [level=3] [ref=e170]
+              - img [ref=e171]
+            - paragraph [ref=e173]: Yes, you will have to purchase the new policy and then cancel the old one. You will receive a refund on a pro-rata basis depending on how many days the old policy was active.
+          - generic [ref=e174]:
+            - button "Can I cancel the policy?" [ref=e175] [cursor=pointer]:
+              - heading "Can I cancel the policy?" [level=3] [ref=e176]
+              - img [ref=e177]
+            - paragraph [ref=e179]: "Yes, you can cancel and get a full refund in the event of the following: You didn’t take up studies in Australia Your visa has been refused Your visa extension has been refused"
+  - contentinfo [ref=e180]:
+    - generic [ref=e181]:
+      - generic [ref=e182]:
+        - img "Infinity Logo" [ref=e184]
+        - paragraph [ref=e185]: Everything you need to move abroad
+      - generic [ref=e187]:
+        - generic [ref=e188]:
+          - link "Blogs" [ref=e189] [cursor=pointer]:
+            - /url: https://www.universityliving.com/blog/
+          - link "Student accommodations" [ref=e190] [cursor=pointer]:
+            - /url: https://www.universityliving.com/
+          - link "Terms and conditions" [ref=e191] [cursor=pointer]:
+            - /url: "#"
+          - link "Privacy policy" [ref=e192] [cursor=pointer]:
+            - /url: "#"
+        - 'link "Reach us at: care@universityliving.com" [ref=e194] [cursor=pointer]':
+          - /url: mailto:care@universityliving.com
+      - generic [ref=e196]:
+        - link "App Store" [ref=e197] [cursor=pointer]:
+          - /url: https://www.universityliving.com/app?utm_category=footer&utm_medium=desktop&utm_source=ios
+          - img "App Store" [ref=e198]
+        - link "Google Play Store" [ref=e199] [cursor=pointer]:
+          - /url: https://www.universityliving.com/app?utm_category=footer&utm_medium=desktop&utm_source=android
+          - img "Google Play Store" [ref=e200]
+      - generic [ref=e201]: Powered by University Living
+    - generic:
+      - img "decorative grid"
+  - alert [ref=e202]
+  - button:
+    - generic:
+      - dialog:
+        - generic:
+          - generic:
+            - generic:
+              - img "Header Background"
+              - button "Close modal":
+                - img
+            - generic:
+              - generic:
+                - generic:
+                  - img
+                  - generic:
+                    - paragraph: Coupon code
+                    - paragraph
+                  - generic:
+                    - paragraph: COUPON
+              - generic:
+                - paragraph
+                - generic:
+                  - button "Copy & proceed"
+        - generic:
+          - button
+  - button:
+    - generic:
+      - dialog:
+        - generic:
+          - generic:
+            - generic:
+              - img "Header Background"
+              - button "Close modal":
+                - img
+            - generic:
+              - generic:
+                - generic:
+                  - img
+                  - generic:
+                    - paragraph: Coupon code
+                    - paragraph
+                  - generic:
+                    - paragraph: COUPON
+              - generic:
+                - paragraph
+                - generic:
+                  - button "Copy & proceed"
+        - generic:
+          - button
+  - button:
+    - generic:
+      - dialog:
+        - generic:
+          - generic:
+            - generic:
+              - img "Header Background"
+              - button "Close modal":
+                - img
+            - generic:
+              - generic:
+                - generic:
+                  - img
+                  - generic:
+                    - paragraph: Coupon code
+                    - paragraph
+                  - generic:
+                    - paragraph: COUPON
+              - generic:
+                - paragraph
+                - generic:
+                  - button "Copy & proceed"
+        - generic:
+          - button
+  - button:
+    - generic:
+      - dialog:
+        - generic:
+          - paragraph: Enquire Now
+          - button:
+            - img
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - img
+                - generic: Get Health Insurance
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - combobox:
+                        - option "Select Country *" [disabled] [selected]
+                        - option "Australia"
+                        - option "United States"
+                        - option "Ireland"
+                      - generic:
+                        - img
+                      - generic:
+                        - text: Destination Country
+                        - superscript: "*"
+                    - generic:
+                      - generic:
+                        - combobox:
+                          - option "Select a Country first" [disabled] [selected]
+                        - generic:
+                          - img
+                        - generic:
+                          - text: Provider
+                          - superscript: "*"
+                  - generic:
+                    - generic:
+                      - textbox "First name *"
+                      - generic:
+                        - text: First name
+                        - superscript: "*"
+                    - generic:
+                      - textbox "Last name *"
+                      - generic:
+                        - text: Last name
+                        - superscript: "*"
+                  - generic:
+                    - generic:
+                      - textbox "Email *"
+                      - generic:
+                        - text: Email
+                        - superscript: "*"
+                    - generic:
+                      - generic:
+                        - text: Phone number
+                        - superscript: "*"
+                      - generic:
+                        - text: "*"
+                        - textbox "Phone number *": "+91"
+                        - generic:
+                          - 'button "India: + 91"'
+                  - generic:
+                    - button "Get Health Insurance":
+                      - generic: Get Health Insurance
+        - generic:
+          - button
+  - button:
+    - generic:
+      - dialog:
+        - generic:
+          - paragraph: Terms and Conditions
+          - button:
+            - img
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - heading "1. Introduction & Acceptance of Terms" [level=3]
+                - generic:
+                  - paragraph:
+                    - strong: "1.1"
+                    - text: These Terms & Conditions (hereinafter referred to as "T&C") govern your access to and use of the website, domain, and digital platform (hereinafter referred to as "Platform") offering Value-Added Services (hereinafter referred to as "VAS") provided by University Living Accommodation Pvt. Ltd. (hereinafter referred to as "University Living" or "Company") bearing CIN U80301DL2016PTC292351 also hereby referred to as "we", "our" or "us".
+                  - paragraph:
+                    - strong: "1.2"
+                    - text: By accessing, browsing, registering, using or otherwise interacting with the Platform or our Services, you expressly agree to be bound by these Terms. If you do not agree with these T&C in full, you must immediately discontinue use of the Platform and our Services.
+                  - paragraph:
+                    - strong: "1.3"
+                    - text: We may update, modify, or amend these T&C at any time by updating this page. Your continued use of the Platform after such changes constitutes acceptance of the revised Terms.
+              - generic:
+                - heading "2. Definitions" [level=3]
+                - paragraph: "For purposes of these T&C:"
+                - list:
+                  - listitem: "\"User\", \"you\", \"your\" means the natural person or corporate entity accessing or using the Platform or Services."
+                  - listitem: "\"Value-Added Services\" or \"VAS\" means services offered on the Platform exclusive of the accommodation marketplace (www.universityliving.com), including but not limited to travel assistance, ticketing, visa support, insurance facilitation, forex assistance, guarantor services, advisory services, documentation support, and any related services (which the Company may or can add or remove at any point in time) globally."
+                  - listitem: "\"Service Providers\" means any third parties engaged by us to provide all or part of any VAS."
+              - generic:
+                - heading "3. Scope of the Value-Added Services" [level=3]
+                - generic:
+                  - paragraph:
+                    - strong: "3.1"
+                    - text: The Platform enables Users to request, book, order and receive VAS. We act primarily as facilitator, coordinator and service integrator, and unless expressly stated otherwise, we are not the direct provider of any services covered under VAS. Service delivery and quality for certain third-party services are governed by separate terms between the User and the original Service Provider.
+                  - paragraph:
+                    - strong: "3.2"
+                    - text: We do not guarantee availability, outcomes, eligibility, approval, or results of any VAS and, except as expressly agreed in a separate written contract, accept no liability for outcomes arising from any third-party or partner services. Any disputes arising in such regard shall be between the User and such original Service Provider.
+              - generic:
+                - heading "4. User Accounts & Registration" [level=3]
+                - generic:
+                  - paragraph:
+                    - strong: "4.1"
+                    - text: Certain Services offered on this Platform require account creation or registration. By registering, you represent and warrant that all information provided is accurate, complete and up-to-date. You are responsible for safeguarding any login credentials and for all activities conducted under your account.
+                  - paragraph:
+                    - strong: "4.2"
+                    - text: We may suspend or terminate account access if you violate these T&C, provide fraudulent information, or misuse the Platform by any means.
+              - generic:
+                - heading "5. Payments, Fees & Billing" [level=3]
+                - generic:
+                  - paragraph:
+                    - strong: "5.1"
+                    - text: For VAS that require payment, you agree to pay all applicable fees, charges and taxes as specified at the time of purchase (hereinafter referred to as "Fees"). Fees may vary by Service and geography.
+                  - paragraph:
+                    - strong: "5.2"
+                    - text: Payments may be processed through third-party payment gateways. We are not responsible for payment gateway errors, processing delays, refunds or data inaccuracies transmitted by such third parties.
+                  - paragraph:
+                    - strong: "5.3"
+                    - text: Fees are non-refundable except as expressly provided in these T&C or in a separate service order agreed between the parties.
+              - generic:
+                - heading "6. Use of the Platform & Prohibited Conduct" [level=3]
+                - generic:
+                  - paragraph:
+                    - strong: "6.1"
+                    - text: You may use the Platform only for lawful purposes and in compliance with these T&C and any applicable local, national and international laws.
+                  - paragraph:
+                    - strong: "6.2"
+                    - text: "You shall not:"
+                  - list:
+                    - listitem: interfere with the operation(s) of the Platform;
+                    - listitem: use any automated tools (bots, scrapers, robots, etc.) without prior written consent;
+                    - listitem: transmit harmful, unlawful or offensive content;
+                    - listitem: impersonate any other person or entity; or
+                    - listitem: violate the rights of any third party.
+              - generic:
+                - heading "7. Intellectual Property Rights (IPR)" [level=3]
+                - generic:
+                  - paragraph:
+                    - strong: "7.1"
+                    - text: The Platform and all related content, namely the text, logos, graphics, trademarks, designs, processes and all materials (hereinafter referred to as "Content") are all owned or licensed by us (University Living) and are protected by intellectual property laws. Except as expressly permitted, you may not copy, reproduce, republish, upload, post, transmit or distribute any Content without our prior written consent.
+                  - paragraph:
+                    - strong: "7.2"
+                    - text: You retain ownership of any data or materials provided by you; however, by submitting such content you grant us a worldwide, non-exclusive license to use, display, reproduce and distribute that content solely for provision of the Services.
+              - generic:
+                - heading "8. Data, Privacy & Cookies" [level=3]
+                - generic:
+                  - paragraph:
+                    - strong: "8.1"
+                    - text: Our processing of personal data is governed by our Privacy Policy, which forms part of these Terms.
+                  - paragraph:
+                    - strong: "8.2"
+                    - text: By using the Platform and Services, you consent to the collection, processing and transfer of your personal data across jurisdictions as necessary to provide Services and as permitted by law.
+                  - paragraph:
+                    - strong: "8.3"
+                    - text: You agree that we may share necessary data with Service Providers to facilitate the delivery of Services.
+              - generic:
+                - heading "9. Disclaimers & Limitation of Liability" [level=3]
+                - generic:
+                  - paragraph:
+                    - strong: "9.1"
+                    - text: ALL SERVICES AND PLATFORM CONTENT ARE PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, WHATSOEVER.
+                  - paragraph:
+                    - strong: "9.2"
+                    - text: TO THE MAXIMUM EXTENT PERMITTED BY LAW, WE DISCLAIM ALL WARRANTIES INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT.
+                  - paragraph:
+                    - strong: "9.3"
+                    - text: IN NO EVENT SHALL WE BE HELD LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, PUNITIVE, CONSEQUENTIAL DAMAGES OR LOSS OF PROFITS, REVENUE, DATA OR CUSTOMER GOODWILL, ARISING OUT OF OR RELATED TO THESE TERMS OR THE SERVICES, WHETHER BASED ON CONTRACT, TORT, NEGLIGENCE, STRICT LIABILITY OR OTHERWISE.
+                  - paragraph:
+                    - strong: "9.4"
+                    - text: Nothing in these T&C limits liability for death or personal injury caused by our negligence or for any other liability which cannot be limited or excluded by applicable law.
+              - generic:
+                - heading "10. Governing Law & Dispute Resolution" [level=3]
+                - paragraph:
+                  - strong: "10.1"
+                  - text: These T&C shall be governed by the laws of India. Any dispute arising out of or relating to these Terms shall be subject to the exclusive jurisdiction of courts in New Delhi, India.
+              - generic:
+                - heading "11. Third-Party Links & Services" [level=3]
+                - generic:
+                  - paragraph:
+                    - strong: "11.1"
+                    - text: The Platform may contain links to third-party websites or services not owned or controlled by us. We are not responsible for the content or practices of such third parties.
+                  - paragraph:
+                    - strong: "11.2"
+                    - text: Use of third-party links or services is at your own risk and subject to their own terms and policies.
+              - generic:
+                - heading "12. Termination & Suspension" [level=3]
+                - paragraph:
+                  - strong: "12.1"
+                  - text: We reserve the right, in our sole discretion, to suspend or terminate your access to the Platform or to any of our Services, with or without cause, and with or without notice.
+              - generic:
+                - heading "13. Updates to Terms" [level=3]
+                - paragraph:
+                  - strong: "13.1"
+                  - text: We may revise these T&C at any time. Revised T&C will take effect when published on the Platform. Your continued use of the Platform after such changes signifies your acceptance of the revised T&C.
+              - generic:
+                - heading "14. Contact Us" [level=3]
+                - paragraph: "If you have questions or concerns about these Terms, please contact us at:"
+                - paragraph:
+                  - text: University Living Accommodation Pvt. Ltd. via email at
+                  - link "care@universityliving.com":
+                    - /url: mailto:care@universityliving.com
+        - generic:
+          - button
+  - button:
+    - generic:
+      - dialog:
+        - generic:
+          - paragraph: Privacy Policy
+          - button:
+            - img
+        - generic:
+          - generic:
+            - generic: Loading...
+        - generic:
+          - button
+```

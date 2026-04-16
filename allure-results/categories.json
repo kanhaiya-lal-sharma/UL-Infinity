@@ -1,0 +1,11 @@
+
+[
+  {
+    "name": "UI Bug",
+    "matchedStatuses": ["failed"]
+  },
+  {
+    "name": "Test Bug",
+    "matchedStatuses": ["broken"]
+  }
+]
